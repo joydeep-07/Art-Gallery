@@ -60,10 +60,10 @@ const AreWeWorking = () => {
           ref={horizontalContentRef}
           className="flex h-screen items-center whitespace-nowrap"
         >
-          <div className="flex-shrink-0  w-screen flex justify-center items-center gap-20 px-16 pb-70">
+          <div className="flex-shrink-0  w-screen flex justify-center gap-20 px-16 pb-70">
             <h2
               style={{ fontFamily: "karatone" }}
-              className="text-neutral-700 text-left text-4xl max-w-3xl flex-shrink-0 whitespace-normal "
+              className="text-neutral-700 pt-15 text-left text-4xl max-w-3xl flex-shrink-0 whitespace-normal "
             >
               I've been designing for 17 years. My background in art and
               technology allows me to flexibly manage the product development
@@ -79,10 +79,10 @@ const AreWeWorking = () => {
             </div>
           </div>
 
-          <div className="flex-shrink-0 w-screen flex justify-center items-center gap-16 px-16 pb-70">
+          <div className="flex-shrink-0 w-screen flex justify-center gap-16 px-16 pb-70">
             <h2
               style={{ fontFamily: "karatone" }}
-              className="text-neutral-700 text-left text-4xl max-w-3xl flex-shrink-0 whitespace-normal "
+              className="text-neutral-700 pt-15 text-left text-4xl max-w-3xl flex-shrink-0 whitespace-normal "
             >
               I've been designing for 17 years. My background in art and
               technology allows me to flexibly manage the product development
@@ -98,10 +98,10 @@ const AreWeWorking = () => {
             </div>
           </div>
 
-          <div className="flex-shrink-0 w-screen flex justify-center items-center gap-16 px-16 pb-70">
+          <div className="flex-shrink-0 w-screen flex justify-center gap-16 px-16 pb-70">
             <h2
               style={{ fontFamily: "karatone" }}
-              className="text-neutral-700 text-left text-4xl max-w-3xl flex-shrink-0 whitespace-normal "
+              className="text-neutral-700 pt-15 text-left text-4xl max-w-3xl flex-shrink-0 whitespace-normal "
             >
               I've been designing for 17 years. My background in art and
               technology allows me to flexibly manage the product development
@@ -117,10 +117,10 @@ const AreWeWorking = () => {
             </div>
           </div>
 
-          <div className="flex-shrink-0 w-screen flex justify-center items-center gap-16 px-16 pb-70">
+          <div className="flex-shrink-0 w-screen flex justify-center gap-16 px-16 pb-70">
             <h2
               style={{ fontFamily: "karatone" }}
-              className="text-neutral-700 text-left text-4xl max-w-3xl flex-shrink-0 whitespace-normal "
+              className="text-neutral-700 pt-15 text-left text-4xl max-w-3xl flex-shrink-0 whitespace-normal "
             >
               I've been designing for 17 years. My background in art and
               technology allows me to flexibly manage the product development
