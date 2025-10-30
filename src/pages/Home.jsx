@@ -2,6 +2,8 @@ import React from "react";
 import Gallery from "./Gallery";
 import Navbar from "../layouts/Navbar";
 import Hero from "../components/Hero";
+import About from "../components/About";
+
 
 const Home = () => {
   return (
@@ -21,6 +23,7 @@ const Home = () => {
       <div className="relative z-10">
         <Navbar />
         <Hero />
+       <About/>
         {/* <Gallery /> */}
       </div>
     </div>
