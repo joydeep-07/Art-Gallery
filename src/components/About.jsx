@@ -2,12 +2,12 @@ import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import video from "../assets/video/banner.mp4";
-
+import CustomCursor from "./CustomCursor";
+import { CiPlay1 } from "react-icons/ci";
 gsap.registerPlugin(ScrollTrigger);
 
 const About = () => {
   const textRef = useRef(null);
-  const headingRef = useRef(null);
   const sectionRef = useRef(null);
 
   // Split text into span-wrapped characters
@@ -24,10 +24,9 @@ const About = () => {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-     
-
-      // Animate each letter of paragraph based on scroll
       const letters = textRef.current.querySelectorAll("span");
+
+      // Scroll-based letter reveal
       gsap.to(letters, {
         opacity: 1,
         y: 0,
@@ -35,21 +34,23 @@ const About = () => {
         stagger: 0.01,
         ease: "power2.out",
         scrollTrigger: {
-          trigger: textRef.current,
-          start: "top 85%",
-          end: "bottom 40%",
+          trigger: sectionRef.current,
+          start: "top top",
+          end: "+=150%", // how long it stays pinned
           scrub: 2,
+          pin: true, // <–– keeps section sticky
+          anticipatePin: 1,
         },
       });
 
-      // Soft gradient motion background
+      // Gradient background motion while pinned
       gsap.to(textRef.current, {
         backgroundPosition: "200% center",
         ease: "none",
         scrollTrigger: {
-          trigger: textRef.current,
-          start: "top bottom",
-          end: "bottom top",
+          trigger: sectionRef.current,
+          start: "top top",
+          end: "+=150%",
           scrub: 2,
         },
       });
@@ -74,6 +75,7 @@ const About = () => {
       {/* Video Section */}
       <div className="relative w-full max-w-5xl rounded-2xl overflow-hidden shadow-2xl mb-12">
         <video
+          id="vid"
           src={video}
           autoPlay
           loop
@@ -94,6 +96,8 @@ const About = () => {
           "Welcome to The Art Gallery, a curated collection of exquisite artworks from around the world. Our mission is to connect art enthusiasts with stunning pieces that inspire and captivate. Whether you're an avid collector or a casual admirer, we invite you to explore our diverse range of artworks and discover the stories behind each piece. Thank you for being a part of our artistic journey."
         )}
       </div>
+
+      <CustomCursor icon={CiPlay1} targetId="vid" />
     </section>
   );
 };
