@@ -1,8 +1,39 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import About from "./About"; // Assuming 'About' component exists
+
+// Register the ScrollTrigger plugin once globally
+gsap.registerPlugin(ScrollTrigger);
 
 const Hero = () => {
+  // 1. Create a ref for the element to animate
+  const headingRef = useRef(null);
+
+  useEffect(() => {
+    // 2. Setup the GSAP animation once the component mounts
+    if (headingRef.current) {
+      gsap.to(headingRef.current, {
+        y: 150, // Moves the element down 150 pixels as the user scrolls
+        ease: "none",
+        scrollTrigger: {
+          trigger: headingRef.current,
+          start: "top top", // Start when the top of the element hits the top of the viewport
+          end: "bottom top", // End when the bottom of the element leaves the top of the viewport
+          scrub: 5, // Links the animation to the scroll position smoothly (0.5 adds a slight "lag" for smoothness)
+        },
+      });
+    }
+
+    // Cleanup function: Kills ScrollTrigger instances on component unmount
+    return () => {
+      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+    };
+  }, []);
+
   return (
     <>
+      {/* The main container for the Hero section */}
       <div className="min-h-screen flex flex-col items-center justify-center relative overflow-hidden">
         {/* Subtle background elements for premium feel */}
         <div className="absolute inset-0 pointer-events-none">
@@ -17,7 +48,9 @@ const Hero = () => {
 
         <div className="text-center px-8 max-w-6xl mx-auto relative z-10">
           {/* Main heading with enhanced typography */}
+          {/* 3. Attach the ref here to apply the parallax effect */}
           <div
+            ref={headingRef}
             style={{
               fontFamily: "karatone, sans-serif",
               lineHeight: 1,
@@ -68,6 +101,8 @@ const Hero = () => {
             </button>
           </div>
         </div>
+
+        {/* Scroll indicator */}
         <div className="">
           <div className="flex flex-col mt-12 items-center space-y-2">
             <span className="text-neutral-500 text-xs tracking-widest uppercase">
@@ -76,6 +111,9 @@ const Hero = () => {
           </div>
         </div>
       </div>
+
+      {/* The following section provides content for scrolling against */}
+      <About />
     </>
   );
 };

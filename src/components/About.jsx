@@ -37,7 +37,7 @@ const About = () => {
           trigger: sectionRef.current,
           start: "top top",
           end: "+=150%", // how long it stays pinned
-          scrub: 2,
+          scrub: 6,
           pin: true, // <–– keeps section sticky
           anticipatePin: 1,
         },
@@ -51,7 +51,7 @@ const About = () => {
           trigger: sectionRef.current,
           start: "top top",
           end: "+=150%",
-          scrub: 2,
+          scrub: 6,
         },
       });
     }, sectionRef);
@@ -80,6 +80,7 @@ const About = () => {
           autoPlay
           loop
           muted
+          loading="lazy"
           playsInline
           className="w-full h-[300px] object-cover"
         ></video>

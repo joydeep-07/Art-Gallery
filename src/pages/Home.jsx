@@ -23,7 +23,7 @@ const Home = () => {
       <div className="relative z-10">
         <Navbar />
         <Hero />
-       <About/>
+       {/* <About/> */}
         <Gallery />
       </div>
     </div>
