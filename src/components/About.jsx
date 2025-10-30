@@ -1,110 +1,49 @@
-import React, { useEffect, useRef } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-import paint1 from "../assets/paintings/paint1.jpg";
-import paint2 from "../assets/paintings/paint2.jpg";
-import paint3 from "../assets/paintings/paint3.jpg";
-import paint4 from "../assets/paintings/paint4.jpg";
-
-gsap.registerPlugin(ScrollTrigger);
+import React from "react";
+import video from "../assets/video/banner.mp4";
 
 const About = () => {
-  const containerRef = useRef(null);
-  const imagesRef = useRef([]);
-
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      // Animate each image one by one
-      imagesRef.current.forEach((img, index) => {
-        gsap.fromTo(
-          img,
-          { opacity: 0, y: 100 },
-          {
-            opacity: 1,
-            y: 0,
-            duration: 1,
-            ease: "power2.out",
-            scrollTrigger: {
-              trigger: img,
-              start: "top 85%",
-              end: "bottom 70%",
-              toggleActions: "play none none reverse",
-            },
-          }
-        );
-      });
-
-      // --- Pin RHS until last image reaches center ---
-      const lastImage = imagesRef.current[imagesRef.current.length - 1];
-
-      ScrollTrigger.create({
-        trigger: containerRef.current,
-        start: "top top",
-        endTrigger: lastImage,
-        end: "center center", 
-        pin: ".rhs-content",
-        pinSpacing: true,
-        anticipatePin: 1,
-      });
-    }, containerRef);
-
-    return () => ctx.revert();
-  }, []);
-
   return (
-    <div ref={containerRef} className="min-h-screen py-20 px-4">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-        {/* LHS - Images */}
-        <div className="space-y-12">
-          {[paint1, paint2, paint3, paint4].map((img, i) => (
-            <img
-              key={i}
-              ref={(el) => (imagesRef.current[i] = el)}
-              src={img}
-              alt={`Painting ${i + 1}`}
-              className="w-auto h-[700px] rounded-lg shadow-lg opacity-0"
-            />
-          ))}
-        </div>
+    <section className="min-h-screen flex flex-col items-center justify-start py-20 px-6 overflow-hidden">
+      {/* Heading */}
+      <h1
+        className="text-5xl md:text-6xl font-bold mb-12 text-center bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent"
+        style={{ fontFamily: "karatone, sans-serif", letterSpacing: "0.03em" }}
+      >
+        About Us
+      </h1>
 
-        {/* RHS - Fixed Content */}
-        <div className="rhs-content space-y-8 lg:sticky lg:top-32">
-          <div className="text-center lg:text-left">
-            <h1
-              style={{
-                fontFamily: "karatone, sans-serif",
-                lineHeight: 1.1,
-                letterSpacing: "0.03em",
-              }}
-              className="text-5xl lg:text-6xl text-gray-800 font-bold mb-6 bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent"
-            >
-              About Us
-            </h1>
+      {/* Video Section */}
+      <div className="relative w-full max-w-5xl rounded-2xl overflow-hidden shadow-2xl mb-12">
+        <video
+          src={video}
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-[300px] object-cover"
+        ></video>
 
-            <div className="relative">
-              <div className="absolute -left-4 top-0 w-1 h-full bg-gradient-to-b from-amber-400 to-orange-500 rounded-full"></div>
-              <p className="text-lg lg:text-xl text-gray-600 leading-relaxed pl-6">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-                mollitia repellat laudantium molestiae officiis tempore tenetur
-                dolor consequuntur magnam earum eum neque quasi expedita est
-                natus voluptatem laborum maxime accusamus, deserunt magni illum.
-                Excepturi reiciendis ipsa ipsam, neque voluptatibus, soluta
-                accusamus atque ipsum omnis architecto eum ad vero eius.
-                Laboriosam.
-              </p>
-            </div>
-          </div>
-
-          {/* CTA Button */}
-          <div className="text-center lg:text-left">
-            <button className="bg-gradient-to-r from-amber-500 to-orange-500 text-white px-8 py-4 rounded-full font-semibold text-lg hover:from-amber-600 hover:to-orange-600 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
-              Discover Our Story
-            </button>
-          </div>
-        </div>
+        {/* Gradient overlay for cinematic tone */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none"></div>
       </div>
-    </div>
+
+      {/* Content */}
+      <div className="max-w-3xl text-center space-y-6">
+        <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
+          Welcome to{" "}
+          <span className="font-semibold text-amber-600">The Art Gallery</span>,
+          a curated collection of exquisite artworks from around the world. Our
+          mission is to connect art enthusiasts with stunning pieces that
+          inspire and captivate. Whether you're an avid collector or a casual
+          admirer, we invite you to explore our diverse range of artworks and
+          discover the stories behind each piece. Thank you for being a part of
+          our artistic journey.
+        </p>
+
+      
+
+      </div>
+    </section>
   );
 };
 
