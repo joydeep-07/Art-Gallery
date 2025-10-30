@@ -10,7 +10,7 @@ const Navbar = () => {
             <div className="text-center">
               <div
                 style={{
-                  fontFamily: "karatone, sans-serif",
+                  fontFamily: "caesar, sans-serif",
                 }}
                 className="flex items-baseline"
               >
