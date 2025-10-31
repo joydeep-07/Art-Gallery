@@ -2,10 +2,17 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className=" backdrop-blur-sm">
-      <div className="max-w-8xl mx-[70px] px-8">
+    <nav className="fixed top-0 w-full px-[70px] backdrop-blur-sm z-10">
+      {" "}
+      {/* Added w-full and z-10 for better behavior */}
+      {/* Modified the class here:
+        - Removed 'max-w-8xl mx-[70px] px-8'
+        - Used 'w-full' to span the width
+        - Used 'px-8' for padding
+      */}
+      <div className="w-full px-8">
         <div className="flex justify-between items-center h-20">
-          {/* Logo Section */}
+          {/* Logo Section (LHS) */}
           <div className="flex items-center">
             <div className="text-center">
               <div
@@ -27,13 +34,13 @@ const Navbar = () => {
             </div>
           </div>
 
-          {/* Navigation Links */}
+          {/* Navigation Links (RHS) */}
           <div className="hidden md:block">
             <ul className="flex space-x-12">
               <li className="group">
                 <a
                   href="#"
-                  className="text-amber-900/80 hover:text-amber-700  tracking-wide transition-colors duration-300 relative py-2"
+                  className="text-amber-900/80 hover:text-amber-700 tracking-wide transition-colors duration-300 relative py-2"
                 >
                   About Us
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-700 transition-all duration-300 group-hover:w-full"></span>
@@ -69,7 +76,7 @@ const Navbar = () => {
             </ul>
           </div>
 
-          {/* Mobile Menu Button */}
+          {/* Mobile Menu Button (RHS) */}
           <div className="md:hidden">
             <button className="text-amber-800 hover:text-amber-700 transition-colors duration-300">
               <svg
