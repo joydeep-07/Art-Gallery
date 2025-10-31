@@ -26,7 +26,7 @@ const AreWeWorking = () => {
         start: "top top",
         end: `+=${scrollWidth}`,
         pin: true,
-        scrub: 1,
+        scrub: 4,
         anticipatePin: 1,
       },
     });
@@ -38,7 +38,7 @@ const AreWeWorking = () => {
     }).to(
       mainTextContent,
       {
-        x: -mainTextScrollWidth * 0.5,
+        x: -mainTextScrollWidth * 1,
         ease: "none",
       },
       0
@@ -151,6 +151,7 @@ const AreWeWorking = () => {
             </h1>
           </div>
         </div>
+        <div className="border h-200 w-200">hello world</div>
       </section>
     </div>
   );
