@@ -59,13 +59,13 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="group">
-                <a
-                  href="#contact"
+                <Link
+                  to="/contact"
                   className="text-amber-900/80 hover:text-amber-700 tracking-wide transition-colors duration-300 relative py-2"
                 >
                   Contact
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-700 transition-all duration-300 group-hover:w-full"></span>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

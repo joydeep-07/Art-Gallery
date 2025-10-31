@@ -3,6 +3,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Root from "./layouts/Root";
 import Home from "./pages/Home";
 import AreWeWorking from "./components/AreWeWorking";
+import Gallery from "./pages/Gallery";
+import Contact from "./pages/Contact";
 
 const App = () => {
   // Smooth scrolling with Lenis
@@ -48,6 +50,14 @@ const App = () => {
         {
           path: "we",
           element: <AreWeWorking />,
+        },
+        {
+          path: "gallery",
+          element: <Gallery />,
+        },
+        {
+          path: "contact",
+          element: <Contact />,
         },
       ],
     },
