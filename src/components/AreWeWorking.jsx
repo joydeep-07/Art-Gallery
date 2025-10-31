@@ -42,7 +42,7 @@ const AreWeWorking = () => {
     }).to(
       mainTextContent,
       {
-        x: -mainTextScrollWidth * 1,
+        x: -mainTextScrollWidth * 1.6,
         ease: "none",
       },
       0
@@ -126,25 +126,7 @@ const AreWeWorking = () => {
             </div>
           </div>
 
-          <div className="flex-shrink-0 w-screen flex justify-center gap-16 px-16 pb-70">
-            <h2
-              style={{ fontFamily: "karatone" }}
-              className="text-neutral-700 pt-15 text-left text-4xl max-w-3xl flex-shrink-0 whitespace-normal "
-            >
-              I've been designing for 17 years. My background in art and
-              technology allows me to flexibly manage the product development
-              process. I've led design teams, building bridges between
-              stakeholders, users, and team members.
-            </h2>
-            <div className="p-3 border">
-              <img
-                className="h-110 p-3 border flex-shrink-0"
-                src={img4}
-                alt="art"
-              />
-            </div>
-          </div>
-
+          
           <div className="flex-shrink-0 w-screen flex justify-center gap-16 px-16 pb-70">
             <h2
               style={{ fontFamily: "karatone" }}
