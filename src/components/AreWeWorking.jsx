@@ -1,7 +1,10 @@
 import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import img from "../assets/paintings/paint20.jpg";
+import img1 from "../assets/paintings/paint20.jpg";
+import img2 from "../assets/paintings/paint17.jpg";
+import img3 from "../assets/paintings/paint11.jpg";
+import img4 from "../assets/paintings/paint18.jpg";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -78,7 +81,7 @@ const AreWeWorking = () => {
             <div className="p-3 border">
               <img
                 className="h-110 p-3 border flex-shrink-0"
-                src={img}
+                src={img1}
                 alt="art"
               />
             </div>
@@ -97,7 +100,7 @@ const AreWeWorking = () => {
             <div className="p-3 border">
               <img
                 className="h-110 p-3 border flex-shrink-0"
-                src={img}
+                src={img2}
                 alt="art"
               />
             </div>
@@ -116,7 +119,7 @@ const AreWeWorking = () => {
             <div className="p-3 border">
               <img
                 className="h-110 p-3 border flex-shrink-0"
-                src={img}
+                src={img3}
                 alt="art"
               />
             </div>
@@ -135,7 +138,7 @@ const AreWeWorking = () => {
             <div className="p-3 border">
               <img
                 className="h-110 p-3 border flex-shrink-0"
-                src={img}
+                src={img4}
                 alt="art"
               />
             </div>
