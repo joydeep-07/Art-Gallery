@@ -5,6 +5,7 @@ import img1 from "../assets/paintings/paint20.jpg";
 import img2 from "../assets/paintings/paint17.jpg";
 import img3 from "../assets/paintings/paint11.jpg";
 import img4 from "../assets/paintings/paint18.jpg";
+import Side from "./Side";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -143,6 +144,18 @@ const AreWeWorking = () => {
               />
             </div>
           </div>
+
+          <div className="flex-shrink-0 w-screen flex justify-center gap-16 px-16 pb-70">
+            <h2
+              style={{ fontFamily: "karatone" }}
+              className="text-neutral-700 pt-15 text-left text-4xl max-w-3xl flex-shrink-0 whitespace-normal "
+            >
+              I've been designing for 17 years. My background in art and
+              technology allows me to flexibly manage the product development
+              process. I've led design teams, building bridges between
+              stakeholders, users, and team members.
+            </h2>
+          </div>
         </div>
 
         {/* Main Text — scrolls slower */}
@@ -160,6 +173,7 @@ const AreWeWorking = () => {
           </div>
         </div>
       </section>
+      <Side />
     </div>
   );
 };

@@ -4,6 +4,7 @@ import Navbar from "../layouts/Navbar";
 import Hero from "../components/Hero";
 import About from "../components/About";
 import AreWeWorking from "../components/AreWeWorking";
+import Side from "../components/Side";
 
 const Home = () => {
   return (
