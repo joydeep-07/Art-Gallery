@@ -1,9 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className="fixed top-0 left-0 w-full  z-50">
+    <nav className=" backdrop-blur-sm">
       <div className="max-w-8xl mx-[70px] px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo Section */}
@@ -28,50 +27,50 @@ const Navbar = () => {
             </div>
           </div>
 
-          {/* Navigation Links (RHS) */}
-          <div className="hidden md:flex justify-end flex-1">
+          {/* Navigation Links */}
+          <div className="hidden md:block">
             <ul className="flex space-x-12">
               <li className="group">
-                <Link
-                  to="/"
-                  className="text-amber-900/80 hover:text-amber-700 tracking-wide transition-colors duration-300 relative py-2"
+                <a
+                  href="#"
+                  className="text-amber-900/80 hover:text-amber-700  tracking-wide transition-colors duration-300 relative py-2"
                 >
-                  Home
+                  About Us
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-700 transition-all duration-300 group-hover:w-full"></span>
-                </Link>
+                </a>
               </li>
               <li className="group">
-                <Link
-                  to="/we"
+                <a
+                  href="#"
                   className="text-amber-900/80 hover:text-amber-700 tracking-wide transition-colors duration-300 relative py-2"
                 >
-                  Are We Working
+                  Collections
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-700 transition-all duration-300 group-hover:w-full"></span>
-                </Link>
+                </a>
               </li>
               <li className="group">
-                <Link
-                  to="/gallery"
+                <a
+                  href="#"
                   className="text-amber-900/80 hover:text-amber-700 tracking-wide transition-colors duration-300 relative py-2"
                 >
-                  Gallery
+                  Exhibitions
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-700 transition-all duration-300 group-hover:w-full"></span>
-                </Link>
+                </a>
               </li>
               <li className="group">
-                <Link
-                  to="/contact"
+                <a
+                  href="#"
                   className="text-amber-900/80 hover:text-amber-700 tracking-wide transition-colors duration-300 relative py-2"
                 >
                   Contact
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-700 transition-all duration-300 group-hover:w-full"></span>
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden flex justify-end flex-1">
+          <div className="md:hidden">
             <button className="text-amber-800 hover:text-amber-700 transition-colors duration-300">
               <svg
                 className="w-6 h-6"
