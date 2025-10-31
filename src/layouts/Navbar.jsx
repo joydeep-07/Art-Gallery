@@ -1,8 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className=" backdrop-blur-sm">
+    <nav className="fixed top-0 left-0 w-full  z-50">
       <div className="max-w-8xl mx-[70px] px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo Section */}
@@ -27,39 +28,39 @@ const Navbar = () => {
             </div>
           </div>
 
-          {/* Navigation Links */}
-          <div className="hidden md:block">
+          {/* Navigation Links (RHS) */}
+          <div className="hidden md:flex justify-end flex-1">
             <ul className="flex space-x-12">
               <li className="group">
-                <a
-                  href="#"
-                  className="text-amber-900/80 hover:text-amber-700  tracking-wide transition-colors duration-300 relative py-2"
-                >
-                  About Us
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-700 transition-all duration-300 group-hover:w-full"></span>
-                </a>
-              </li>
-              <li className="group">
-                <a
-                  href="#"
+                <Link
+                  to="/"
                   className="text-amber-900/80 hover:text-amber-700 tracking-wide transition-colors duration-300 relative py-2"
                 >
-                  Collections
+                  Home
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-700 transition-all duration-300 group-hover:w-full"></span>
-                </a>
+                </Link>
               </li>
               <li className="group">
-                <a
-                  href="#"
+                <Link
+                  to="/we"
                   className="text-amber-900/80 hover:text-amber-700 tracking-wide transition-colors duration-300 relative py-2"
                 >
-                  Exhibitions
+                  Are We Working
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-700 transition-all duration-300 group-hover:w-full"></span>
-                </a>
+                </Link>
+              </li>
+              <li className="group">
+                <Link
+                  to="/gallery"
+                  className="text-amber-900/80 hover:text-amber-700 tracking-wide transition-colors duration-300 relative py-2"
+                >
+                  Gallery
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-700 transition-all duration-300 group-hover:w-full"></span>
+                </Link>
               </li>
               <li className="group">
                 <a
-                  href="#"
+                  href="#contact"
                   className="text-amber-900/80 hover:text-amber-700 tracking-wide transition-colors duration-300 relative py-2"
                 >
                   Contact
@@ -70,7 +71,7 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden">
+          <div className="md:hidden flex justify-end flex-1">
             <button className="text-amber-800 hover:text-amber-700 transition-colors duration-300">
               <svg
                 className="w-6 h-6"

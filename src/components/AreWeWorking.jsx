@@ -64,7 +64,7 @@ const AreWeWorking = () => {
           ref={horizontalContentRef}
           className="flex h-screen items-center whitespace-nowrap"
         >
-          <div className="flex-shrink-0  w-screen flex justify-center gap-20 px-16 pb-70">
+          <div className="flex-shrink-0  w-screen flex justify-center gap-20 px-16 pb-40">
             <div>
               <h1 style={{ fontFamily: "caesar" }} className="text-5xl pt-5">
                 WHAT we DO?
@@ -88,7 +88,7 @@ const AreWeWorking = () => {
             </div>
           </div>
 
-          <div className="flex-shrink-0 w-screen flex justify-center gap-16 px-16 pb-70">
+          <div className="flex-shrink-0 w-screen flex justify-center gap-16 px-16 pb-40">
             <div className="">
               <h1 style={{ fontFamily: "karatone" }} className="text-2xl">
                 Lorem ipsum dolor sit amet consectetur ?
@@ -128,7 +128,7 @@ const AreWeWorking = () => {
             </div> */}
           </div>
 
-          <div className="flex-shrink-0 w-screen flex justify-center gap-25 px-16 pb-70">
+          <div className="flex-shrink-0 w-screen flex justify-center gap-25 px-16 pb-40">
             <div className="p-3 border">
               <img
                 className="h-110 p-3 border flex-shrink-0"
@@ -163,7 +163,7 @@ const AreWeWorking = () => {
             </div>
           </div>
 
-          <div className="flex-shrink-0 w-screen flex justify-center gap-16 px-16 pb-70">
+          <div className="flex-shrink-0 w-screen flex justify-center gap-16 px-16 pb-40">
             <h2
               style={{ fontFamily: "karatone" }}
               className="text-neutral-700 pt-15 text-left text-4xl max-w-3xl flex-shrink-0 whitespace-normal "
@@ -191,7 +191,7 @@ const AreWeWorking = () => {
           </div>
         </div>
       </section>
-      <Side />
+      {/* <Side /> */}
     </div>
   );
 };

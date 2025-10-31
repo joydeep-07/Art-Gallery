@@ -1,6 +1,6 @@
 import React from "react";
 import Gallery from "./Gallery";
-import Navbar from "../layouts/Navbar";
+// import Navbar from "../layouts/Navbar";
 import Hero from "../components/Hero";
 import About from "../components/About";
 import AreWeWorking from "../components/AreWeWorking";
@@ -11,9 +11,10 @@ const Home = () => {
     <div className="bg-gradient-to-br from-slate-50 to-gray-100">
       {/* Main Content */}
       <div className="relative z-10">
-        <Navbar />
+        {/* <Navbar /> */}
         <Hero />
-        <AreWeWorking />
+       <Side/>
+        {/* <AreWeWorking /> */}
       </div>
     </div>
   );
