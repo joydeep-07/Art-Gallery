@@ -71,7 +71,7 @@ const AreWeWorking = () => {
               </h1>
               <h2
                 style={{ fontFamily: "karatone" }}
-                className="text-neutral-700 pt-15 text-left text-4xl max-w-3xl flex-shrink-0 whitespace-normal "
+                className="text-neutral-700 pt-15 text-justify  text-2xl max-w-3xl flex-shrink-0 whitespace-normal "
               >
                 I've been designing for 17 years. My background in art and
                 technology allows me to flexibly manage the product development
@@ -89,34 +89,46 @@ const AreWeWorking = () => {
           </div>
 
           <div className="flex-shrink-0 w-screen flex justify-center gap-16 px-16 pb-70">
-            <h2
-              style={{ fontFamily: "karatone" }}
-              className="text-neutral-700 pt-15 text-left text-4xl max-w-3xl flex-shrink-0 whitespace-normal "
-            >
-              I've been designing for 17 years. My background in art and
-              technology allows me to flexibly manage the product development
-              process. I've led design teams, building bridges between
-              stakeholders, users, and team members.
-            </h2>
-            <div className="p-3 border">
+            <div className="">
+              <h1 style={{ fontFamily: "karatone" }} className="text-2xl">
+                Lorem ipsum dolor sit amet consectetur ?
+              </h1>
+              <div className="flex pt-10 gap-10">
+                <h2
+                  style={{ fontFamily: "karatone" }}
+                  className="text-neutral-700 text-xl max-w-[700px] text-justify flex-shrink-0 whitespace-normal "
+                >
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
+                  sed eligendi quia laborum temporibus voluptate voluptatum odit
+                  quae obcaecati corrupti debitis labore, at magnam quod ea, in
+                  vitae asperiores ut aliquam consectetur quas non delectus
+                  quidem voluptas? Labore reiciendis qui obcaecati facere amet
+                  veritatis porro est suscipit optio dolore similique sint aut
+                  aliquam ipsum, corporis magni molestiae sequi, provident ea
+                  eos distinctio laudantium! Fugit distinctio quaerat
+                  repudiandae libero reprehenderit enim!
+                </h2>
+                <h2
+                  style={{ fontFamily: "karatone" }}
+                  className="text-neutral-700 text-xl max-w-[500px] text-justify flex-shrink-0 whitespace-normal "
+                >
+                  I've been designing for 17 years. My background in art and
+                  technology allows me to flexibly manage the product
+                  development process. I've led design teams, building bridges
+                  between stakeholders, users, and team members.
+                </h2>
+              </div>
+            </div>
+            {/* <div className="p-3 border">
               <img
                 className="h-110 p-3 border flex-shrink-0"
                 src={img2}
                 alt="art"
               />
-            </div>
+            </div> */}
           </div>
 
-          <div className="flex-shrink-0 w-screen flex justify-center gap-16 px-16 pb-70">
-            <h2
-              style={{ fontFamily: "karatone" }}
-              className="text-neutral-700 pt-15 text-left text-4xl max-w-3xl flex-shrink-0 whitespace-normal "
-            >
-              I've been designing for 17 years. My background in art and
-              technology allows me to flexibly manage the product development
-              process. I've led design teams, building bridges between
-              stakeholders, users, and team members.
-            </h2>
+          <div className="flex-shrink-0 w-screen flex justify-center gap-25 px-16 pb-70">
             <div className="p-3 border">
               <img
                 className="h-110 p-3 border flex-shrink-0"
@@ -124,9 +136,33 @@ const AreWeWorking = () => {
                 alt="art"
               />
             </div>
+            <div>
+              <h2
+                style={{ fontFamily: "karatone" }}
+                className="text-neutral-700 pt-15 text-justify text-xl max-w-4xl flex-shrink-0 whitespace-normal "
+              >
+                I've been designing for 17 years. My background in art and
+                technology allows me to flexibly manage the product development
+                process. I've led design teams, building bridges between
+                stakeholders, users, and team members.
+              </h2>
+              <h2
+                style={{ fontFamily: "karatone" }}
+                className="text-neutral-700 pt-5 text-justify text-xl max-w-4xl flex-shrink-0 whitespace-normal "
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+                reprehenderit beatae rem, voluptates sequi neque culpa nobis
+                deserunt! Corrupti perferendis sunt recusandae necessitatibus
+                perspiciatis voluptatibus dolore, doloremque laudantium itaque
+                quidem omnis aut odit quia? Minima possimus voluptatem est
+                praesentium porro voluptate fugit corporis pariatur amet cum
+                velit nemo, veritatis, vitae magni et tenetur nesciunt magnam
+                recusandae expedita deserunt dicta. Nesciunt harum nemo facilis
+                quisquam magnam nobis, alias exercitationem soluta quas.
+              </h2>
+            </div>
           </div>
 
-          
           <div className="flex-shrink-0 w-screen flex justify-center gap-16 px-16 pb-70">
             <h2
               style={{ fontFamily: "karatone" }}
