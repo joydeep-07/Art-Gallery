@@ -50,7 +50,7 @@ const Hero = () => {
           {/* Main heading with enhanced typography */}
           {/* 3. Attach the ref here to apply the parallax effect */}
           <div
-            ref={headingRef}
+            // ref={headingRef}
             style={{
               fontFamily: "karatone, sans-serif",
               lineHeight: 1,
