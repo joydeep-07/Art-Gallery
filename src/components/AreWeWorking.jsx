@@ -153,13 +153,12 @@ const AreWeWorking = () => {
                 fontFamily: "karatone",
                 lineHeight: 1,
               }}
-              className="text-[150px] font-bold text-neutral-800 inline-block ml-[100px] mr-20"
+              className="text-[150px] font-bold text-neutral-800 inline-block ml-[100px]"
             >
               We create Experience that tells a Story
             </h1>
           </div>
         </div>
-        <div className="border h-200 w-200">hello world</div>
       </section>
     </div>
   );
