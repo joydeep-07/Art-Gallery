@@ -1,11 +1,16 @@
-import React from 'react'
+import React from "react";
 
 const Side = () => {
   return (
-    <div className='min-h-screen bg-amber-300/10' >    
-        
+    <div
+      style={{
+        fontFamily: "caesar, sans-serif",
+      }}
+      className="min-h-screen text-center mt-30 text-[80px] uppercase "
+    >
+        The Art Gallery
     </div>
-  )
-}
+  );
+};
 
-export default Side
+export default Side;

@@ -14,7 +14,6 @@ const Home = () => {
         <Navbar />
         <Hero />
         <AreWeWorking />
-        {/* <Gallery /> */}
       </div>
     </div>
   );
