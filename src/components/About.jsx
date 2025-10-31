@@ -66,7 +66,7 @@ const About = () => {
     >
       {/* Heading */}
       <h1
-        className="text-5xl md:text-7xl font-bold mb-12 text-center text-neutral-800"
+        className="text-5xl md:text-7xl mb-12 text-center text-neutral-800"
         style={{ fontFamily: "caesar, sans-serif", letterSpacing: "0.03em" }}
       >
         About Us
