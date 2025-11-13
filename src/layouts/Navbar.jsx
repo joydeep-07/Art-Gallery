@@ -3,13 +3,6 @@ import React from "react";
 const Navbar = () => {
   return (
     <nav className="fixed top-0 w-full px-[70px] backdrop-blur-sm z-10">
-      {" "}
-      {/* Added w-full and z-10 for better behavior */}
-      {/* Modified the class here:
-        - Removed 'max-w-8xl mx-[70px] px-8'
-        - Used 'w-full' to span the width
-        - Used 'px-8' for padding
-      */}
       <div className="w-full px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo Section (LHS) */}

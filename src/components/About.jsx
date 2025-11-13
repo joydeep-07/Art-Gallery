@@ -26,32 +26,30 @@ const About = () => {
     const ctx = gsap.context(() => {
       const letters = textRef.current.querySelectorAll("span");
 
-      // Scroll-based letter reveal
+      // Faster scroll-based letter reveal (no pin)
       gsap.to(letters, {
         opacity: 1,
         y: 0,
         color: "#111111",
-        stagger: 0.01,
+        stagger: 0.005, // faster stagger speed
         ease: "power2.out",
         scrollTrigger: {
           trigger: sectionRef.current,
-          start: "top top",
-          end: "+=150%", // how long it stays pinned
-          scrub: 6,
-          pin: true, // <–– keeps section sticky
-          anticipatePin: 1,
+          start: "top 20%", // starts earlier
+          end: "bottom 60%", // shorter animation distance
+          scrub: 0.8, // faster response to scroll
         },
       });
 
-      // Gradient background motion while pinned
+      // Subtle background gradient movement (not pinned)
       gsap.to(textRef.current, {
         backgroundPosition: "200% center",
         ease: "none",
         scrollTrigger: {
           trigger: sectionRef.current,
-          start: "top top",
-          end: "+=150%",
-          scrub: 6,
+          start: "top 90%",
+          end: "bottom 10%",
+          scrub: 0.5,
         },
       });
     }, sectionRef);
@@ -62,7 +60,7 @@ const About = () => {
   return (
     <section
       ref={sectionRef}
-      className="min-h-screen flex flex-col items-center justify-start py-20 px-6 relative overflow-hidden "
+      className="min-h-screen flex flex-col items-center justify-start py-20 px-6 relative overflow-hidden"
     >
       {/* Heading */}
       <h1

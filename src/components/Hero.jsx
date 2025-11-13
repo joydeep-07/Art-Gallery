@@ -34,7 +34,7 @@ const Hero = () => {
   return (
     <>
       {/* The main container for the Hero section */}
-      <div className="min-h-screen flex flex-col items-center justify-center relative overflow-hidden">
+      <div className="min-h-screen flex flex-col items-center pt-22 justify-center relative overflow-hidden">
         {/* Subtle background elements for premium feel */}
         <div className="absolute inset-0 pointer-events-none">
           {/* Subtle gradient overlay */}
