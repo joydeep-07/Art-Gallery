@@ -21,10 +21,10 @@ const Navbar = () => {
                 }}
                 className="flex items-baseline"
               >
-                <span className="text-amber-800 font-medium text-2xl pr-2 tracking-tight">
+                <span className="text-amber-800 font-extrabold text-2xl pr-2 tracking-tight">
                   ART
                 </span>
-                <span className="text-amber-600/80 font-light text-2xl tracking-wider">
+                <span className="text-amber-600/80 font-extrabold text-2xl tracking-wider">
                   GALLERY
                 </span>
               </div>

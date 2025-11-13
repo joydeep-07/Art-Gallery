@@ -9,6 +9,13 @@
 }
 
 @font-face {
+  font-family: "Caesar";
+  src: url("./assets/font/Caesar.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "Karatone";
   src: url("./assets/font/Karatone.ttf") format("truetype");
   font-weight: normal;
