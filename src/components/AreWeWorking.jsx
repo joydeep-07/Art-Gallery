@@ -90,8 +90,8 @@ const AreWeWorking = () => {
 
           <div className="flex-shrink-0 w-screen flex justify-center gap-16 px-16 pb-40">
             <div className="">
-              <h1 style={{ fontFamily: "karatone" }} className="text-2xl">
-                Lorem ipsum dolor sit amet consectetur ?
+              <h1 style={{ fontFamily: "caesar" }} className="text-5xl pt-5">
+                Lorem ipsum dolor, sit adipisicing ?
               </h1>
               <div className="flex pt-10 gap-10">
                 <h2
@@ -137,9 +137,12 @@ const AreWeWorking = () => {
               />
             </div>
             <div>
+              <h1 style={{ fontFamily: "caesar" }} className="text-4xl pt-10">
+                Lorem ipsum dolor, sit adipisicing ?
+              </h1>
               <h2
                 style={{ fontFamily: "karatone" }}
-                className="text-neutral-700 pt-15 text-justify text-xl max-w-4xl flex-shrink-0 whitespace-normal "
+                className="text-neutral-700 pt-10 text-justify text-xl max-w-4xl flex-shrink-0 whitespace-normal "
               >
                 I've been designing for 17 years. My background in art and
                 technology allows me to flexibly manage the product development
