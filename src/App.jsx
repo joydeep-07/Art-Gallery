@@ -5,6 +5,9 @@ import Root from "./layouts/Root";
 import Home from "./pages/Home";
 import Gallery from "./pages/Gallery";
 import AreWeWorking from "./pages/AreWeWorking";
+import Contact from "./pages/Contact";
+import Collections from "./pages/Collections";
+import Exhibition from "./pages/Exhibition";
 
 const App = () => {
   useEffect(() => {
@@ -43,7 +46,9 @@ const App = () => {
         <Route path="/" element={<Root />}>
           {/* CHILD ROUTES */}
           <Route index element={<Home />} />
-          <Route path="gallery" element={<Gallery />} />
+          <Route path="/contacts" element={<Contact />} />
+          <Route path="/collections" element={<Collections />} />
+          <Route path="/exhibition" element={<Exhibition />} />
           <Route path="/are/we/working" element={<AreWeWorking />} />
         </Route>
       </Routes>
