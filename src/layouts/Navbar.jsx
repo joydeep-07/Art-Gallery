@@ -1,18 +1,18 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className="fixed top-0 w-full px-[70px] backdrop-blur-sm z-10">
+    <nav className="fixed top-0 w-full px-[70px] backdrop-blur-sm z-100">
       <div className="w-full px-8">
         <div className="flex justify-between items-center h-20">
-          {/* Logo Section (LHS) */}
+          {/* Logo Section */}
           <div className="flex items-center">
-            <div className="text-center">
-              <div
-                style={{
-                  fontFamily: "caesar, sans-serif",
-                }}
+            <div className="text-center cursor-pointer">
+              <Link
+                to="/"
                 className="flex items-baseline"
+                style={{ fontFamily: "caesar, sans-serif" }}
               >
                 <span className="text-amber-800 font-extrabold text-2xl pr-2 tracking-tight">
                   ART
@@ -20,56 +20,59 @@ const Navbar = () => {
                 <span className="text-amber-600/80 font-extrabold text-2xl tracking-wider">
                   GALLERY
                 </span>
-              </div>
+              </Link>
               <p className="text-xs text-amber-700/70 tracking-wide">
                 A curated collection of exquisite artworks
               </p>
             </div>
           </div>
 
-          {/* Navigation Links (RHS) */}
+          {/* Navigation Links */}
           <div className="hidden md:block">
             <ul className="flex space-x-12">
               <li className="group">
-                <a
-                  href="#"
+                <Link
+                  to="/are/we/working"
                   className="text-amber-900/80 hover:text-amber-700 tracking-wide transition-colors duration-300 relative py-2"
                 >
                   About Us
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-700 transition-all duration-300 group-hover:w-full"></span>
-                </a>
+                </Link>
               </li>
+
               <li className="group">
-                <a
-                  href="#"
+                <Link
+                  to="/collections"
                   className="text-amber-900/80 hover:text-amber-700 tracking-wide transition-colors duration-300 relative py-2"
                 >
                   Collections
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-700 transition-all duration-300 group-hover:w-full"></span>
-                </a>
+                </Link>
               </li>
+
               <li className="group">
-                <a
-                  href="#"
+                <Link
+                  to="/exhibition"
                   className="text-amber-900/80 hover:text-amber-700 tracking-wide transition-colors duration-300 relative py-2"
                 >
                   Exhibitions
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-700 transition-all duration-300 group-hover:w-full"></span>
-                </a>
+                </Link>
               </li>
+
               <li className="group">
-                <a
-                  href="#"
+                <Link
+                  to="/contacts"
                   className="text-amber-900/80 hover:text-amber-700 tracking-wide transition-colors duration-300 relative py-2"
                 >
                   Contact
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-700 transition-all duration-300 group-hover:w-full"></span>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
 
-          {/* Mobile Menu Button (RHS) */}
+          {/* Mobile Menu Button */}
           <div className="md:hidden">
             <button className="text-amber-800 hover:text-amber-700 transition-colors duration-300">
               <svg
