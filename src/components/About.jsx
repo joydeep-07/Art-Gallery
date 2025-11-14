@@ -31,13 +31,13 @@ const About = () => {
         opacity: 1,
         y: 0,
         color: "#111111",
-        stagger: 0.005, // faster stagger speed
+        stagger: 5, // faster stagger speed
         ease: "power2.out",
         scrollTrigger: {
           trigger: sectionRef.current,
           start: "top 20%", // starts earlier
           end: "bottom 60%", // shorter animation distance
-          scrub: 0.8, // faster response to scroll
+          scrub: 1, // faster response to scroll
         },
       });
 
