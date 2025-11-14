@@ -90,7 +90,7 @@ const AreWeWorking = () => {
 
           <div className="flex-shrink-0 w-screen flex justify-center gap-16 px-16 pb-40">
             <div className="">
-              <h1 style={{ fontFamily: "caesar" }} className="text-5xl pt-5">
+              <h1 style={{ fontFamily: "caesar" }} className="text-4xl pt-5">
                 Lorem ipsum dolor, sit adipisicing ?
               </h1>
               <div className="flex pt-10 gap-10">
@@ -166,7 +166,7 @@ const AreWeWorking = () => {
             </div>
           </div>
 
-          <div className="flex-shrink-0 w-screen flex justify-center gap-16 px-16 pb-40">
+          {/* <div className="flex-shrink-0 w-screen flex justify-center gap-16 px-16 pb-40">
             <h2
               style={{ fontFamily: "karatone" }}
               className="text-neutral-700 pt-15 text-left text-4xl max-w-3xl flex-shrink-0 whitespace-normal "
@@ -176,7 +176,7 @@ const AreWeWorking = () => {
               process. I've led design teams, building bridges between
               stakeholders, users, and team members.
             </h2>
-          </div>
+          </div> */}
         </div>
 
         {/* Main Text — scrolls slower */}

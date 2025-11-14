@@ -23,4 +23,6 @@
 
 }
 
- /* style={{ fontFamily: "karatone, sans-serif",}} */
+::-webkit-scrollbar{
+  display: none;
+}
