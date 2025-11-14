@@ -5,7 +5,7 @@ import img1 from "../assets/paintings/paint20.jpg";
 import img2 from "../assets/paintings/paint17.jpg";
 import img3 from "../assets/paintings/paint11.jpg";
 import img4 from "../assets/paintings/paint18.jpg";
-import Side from "./Side";
+
 
 gsap.registerPlugin(ScrollTrigger);
 
