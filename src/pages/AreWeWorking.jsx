@@ -185,13 +185,14 @@ const AreWeWorking = () => {
             <h1
               style={{
                 fontFamily: "karatone",
-                lineHeight: 1,
+                lineHeight: 1.2,
               }}
-              className="text-[150px] font-bold text-neutral-800 inline-block ml-[100px]"
+              className="text-[150px] font-bold text-neutral-800 inline-block ml-[50px]"
             >
               We create Experience that tells a Story
             </h1>
           </div>
+          
         </div>
       </section>
       {/* <Side /> */}
