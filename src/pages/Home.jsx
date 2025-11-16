@@ -11,6 +11,7 @@ const Home = () => {
       <div className="relative z-10">
         <Hero />
         <Experience/>
+      
       </div>
     </div>
   );

@@ -1,11 +1,54 @@
 import React from "react";
+import { FaPenNib } from "react-icons/fa6";
 
 const ExperienceTexts = () => {
   return (
-    <div className="h-[600px] w-[800px] overflow-hidden border p-5 text-justify">
-      <h1>
-       Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, odit ipsa labore blanditiis quae velit, soluta voluptatem illum voluptatum at sunt impedit sit. Molestias fuga corporis impedit quae modi maxime mollitia aspernatur rem, quos ut culpa delectus maiores ea molestiae ullam quisquam! Reiciendis eligendi, quasi dolorem molestiae quo magnam praesentium quas iure quos amet, tenetur sit error maiores vitae officia adipisci dolor nobis id assumenda consequuntur pariatur. Aspernatur ut neque itaque recusandae, exercitationem quo. Fuga molestiae recusandae eum, esse animi ut eveniet voluptatum consequuntur atque commodi eligendi ex voluptates labore minima expedita! Non, amet. Laboriosam vel, blanditiis quos dicta sequi optio obcaecati dolore odit, magnam qui, aut eligendi nemo adipisci quae quidem nisi nobis illum cum veritatis debitis accusamus quia! Ratione, illo facilis corrupti minima assumenda harum eaque earum iste neque, laboriosam maiores impedit repellat quas. Porro harum voluptas dolor quis omnis corrupti numquam minima! Nam earum et quod dicta nostrum suscipit animi sint illum quia, architecto amet sapiente! Ea recusandae tempore voluptatem vero mollitia quidem, consequuntur rem aperiam veniam eligendi, modi impedit distinctio ipsum dolorem consequatur voluptate. Voluptatibus assumenda ut ab cum, facere minima laborum, numquam magnam quasi earum necessitatibus alias hic at odio inventore voluptatem. Veritatis, vitae dolores? Possimus fuga perspiciatis quod quas sapiente accusamus consequatur, amet facilis nesciunt. Rem, debitis nobis eveniet, corporis quidem suscipit accusantium necessitatibus vero animi ducimus totam nulla quae aspernatur ut ipsa at. Quos, impedit cumque nisi aut at harum ad aspernatur ut quia similique fuga eligendi quasi exercitationem commodi mollitia voluptatem voluptatum rem, a numquam provident esse earum! Minus animi, soluta tempore reprehenderit debitis blanditiis repellendus sint deleniti quos quisquam sunt at tenetur delectus earum culpa velit suscipit molestiae cupiditate sed repudiandae in. Corrupti facilis dignissimos animi nulla. Maiores ad explicabo libero, cum mollitia, odio excepturi aliquam delectus illum maxime accusantium exercitationem porro quasi aliquid nostrum amet beatae. Aliquam fugiat blanditiis cumque exercitationem itaque facere vel, a, fuga, esse recusandae tempora. Maxime laudantium sint consectetur consequatur voluptatibus nihil debitis ea odio saepe natus ut facilis, nulla, nam sunt aliquid sed, qui voluptatum molestias hic! Id reiciendis et maiores unde exercitationem culpa. Possimus suscipit, nihil atque explicabo, in ullam earum voluptate tempora esse numquam officiis, perferendis aliquid dolore! Laborum excepturi eligendi, aliquid vel in inventore dolorem rem perspiciatis et dolorum minima? Delectus reprehenderit ut quae ea enim fuga aut quasi assumenda? Recusandae ipsam veritatis mollitia aliquam explicabo, placeat nobis. Quam alias est laborum dolor voluptates corporis optio, sit accusantium dolores quibusdam aliquid pariatur voluptate ducimus quas voluptas ut porro eos labore libero asperiores deleniti laboriosam tenetur impedit fugiat. Voluptas, dolor vel nostrum deserunt aspernatur veniam esse eligendi accusamus accusantium modi laudantium consectetur repellendus eum laborum nobis alias nulla vitae quos libero distinctio optio! Vitae dolores totam aliquam dolore. Delectus similique fuga animi quisquam asperiores? Modi, veniam obcaecati quasi nemo, quis quod ad architecto vero deleniti molestiae a quos laborum ipsum animi id doloribus dicta sed, quae provident omnis eius esse autem voluptate cupiditate? Facere laboriosam perspiciatis sit qui quis distinctio et nemo voluptas!
-      </h1>
+    <div className="h-[600px] overflow-y-scroll w-[800px] p-5 text-justify">
+      <div style={{ fontFamily: "karatone" }}>
+        {/* SECTION 1 */}
+        <h1 className="flex items-center font-medium text-xl py-5 gap-3">
+          <FaPenNib className="text-xl text-neutral-900" />
+          <span>The Essence of Visual Storytelling</span>
+        </h1>
+        <p className="pb-5">
+          Paintings have always been a timeless form of expression — a language
+          without words. Every brushstroke carries intention, emotion, and a
+          whisper from the artist’s world. From contemporary abstractions to
+          classical realism, each canvas preserves a moment of thought,
+          transforming imagination into something the eye can feel. These works
+          invite viewers to pause, observe, and experience the silent dialogue
+          between colour, texture, and light.
+        </p>
+
+        {/* SECTION 2 */}
+        <h1 className="flex items-center font-medium text-xl py-5 gap-3">
+          <FaPenNib className="text-xl text-neutral-900" />
+          <span>The Value of Antique Art & Cultural Heritage</span>
+        </h1>
+        <p className="pb-5">
+          Antique art pieces hold more than aesthetic beauty — they embody
+          centuries of culture, craftsmanship, and tradition. Every sculpture,
+          carved wooden frame, or hand-woven tapestry carries the fingerprints
+          of a past era. These rare objects not only showcase the evolution of
+          human creativity but also remind us of how artistry has shaped
+          societies across history. Their aged surfaces, subtle imperfections,
+          and preserved details speak of journeys far older than our own.
+        </p>
+
+        {/* SECTION 3 */}
+        <h1 className="flex items-center font-medium text-xl py-5 gap-3">
+          <FaPenNib className="text-xl text-neutral-900" />
+          <span>Connecting Modern Design With Historic Artistry</span>
+        </h1>
+        <p>
+          Blending contemporary design with antique and classical artworks
+          creates a compelling visual experience. It allows the viewer to see
+          how history informs modern aesthetics. This interplay between the old
+          and the new brings character, depth, and storytelling into any space —
+          turning interiors into curated narratives rather than mere living
+          environments.
+        </p>
+      </div>
     </div>
   );
 };
