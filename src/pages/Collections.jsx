@@ -36,20 +36,19 @@ const Collections = () => {
 
         <div className="pt-7 gap-2 flex">
           <input
-            className="p-3 w-xl border"
+            className="p-3 w-xl rounded-[4px] border"
             type="email"
             placeholder="Enter your email"
           />
-          <button className="p-3 border">Subscribe</button>
+          <button className="p-3 bg-neutral-700 text-[#fffceb] hover:bg-neutral-800 rounded-[4px] border">
+            Subscribe
+          </button>
         </div>
 
         {/* 🔥 MAP NEWSLETTERS HERE */}
         <div className="mt-10 grid grid-cols-3 gap-5">
           {Newsletter.map((item) => (
-            <div
-              key={item.id}
-              className="  transition"
-            >
+            <div key={item.id} className="  transition">
               <img
                 src={item.image}
                 alt={item.title}
@@ -57,9 +56,21 @@ const Collections = () => {
               />
 
               <div className="p-4">
-                <h2 className="mt-3 text-lg font-semibold">{item.title}</h2>
+                <h2
+                  style={{
+                    fontFamily: "karatone, sans-serif",
+                    lineHeight: 1,
+                    letterSpacing: "0.05em",
+                  }}
+                  className="mt-3 text-lg font-medium pb-3"
+                >
+                  {item.title}
+                </h2>
 
-                <p className="text-sm text-gray-600">{item.description}</p>
+                <p className="text-sm pb-5 text-gray-600">{item.description}</p>
+                <button className="border border-neutral-800 text-neutral-800 px-4 py-2 rounded-[4px]">
+                  Read More
+                </button>
               </div>
             </div>
           ))}
