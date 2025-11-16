@@ -82,7 +82,7 @@ const Experience = () => {
           }}
           className="text-neutral-800 text-[180px] leading-none"
         >
-          Strategy
+          Visual
         </h1>
 
         <h1
@@ -93,7 +93,7 @@ const Experience = () => {
           }}
           className="text-neutral-800 text-[230px] leading-none"
         >
-          Experience
+          Storytelling
         </h1>
       </div>
 
