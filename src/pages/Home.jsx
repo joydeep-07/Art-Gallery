@@ -7,11 +7,10 @@ import Experience from "../components/Experience";
 
 const Home = () => {
   return (
-    <div className="bg-gradient-to-br from-slate-50 to-gray-100">
+    <div className="bg-[#fffceb]">
       <div className="relative z-10">
         <Hero />
-        <Experience/>
-      
+        <Experience />
       </div>
     </div>
   );
