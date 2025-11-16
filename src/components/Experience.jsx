@@ -72,8 +72,6 @@ const Experience = () => {
     <div ref={sectionRef} className="h-screen relative">
       {/* LEFT BIG TEXT */}
       <div className="absolute bottom-5 left-5">
-        <div className="border-t-2 w-[670px] pb-10"></div>
-
         <h1
           style={{
             fontFamily: "karatone, sans-serif",
@@ -82,7 +80,7 @@ const Experience = () => {
           }}
           className="text-neutral-800 text-[180px] leading-none"
         >
-          Visual
+          Essence
         </h1>
 
         <h1
@@ -91,15 +89,15 @@ const Experience = () => {
             lineHeight: 1,
             letterSpacing: "0.03em",
           }}
-          className="text-neutral-800 text-[230px] leading-none"
+          className="text-neutral-800 text-[200px] leading-none"
         >
           Storytelling
         </h1>
       </div>
 
       {/* RIGHT SCROLLING CONTENT */}
-      <div className="absolute top-15 right-20">
-        <div className="h-[500px] overflow-y-scroll w-[700px] p-5 ">
+      <div className="absolute top-20 right-20">
+        <div className="h-[500px] overflow-y-scroll w-[770px] p-5 ">
           <div style={{ fontFamily: "karatone" }}>
             {/* SECTION 1 */}
             <h1 className="flex items-center font-medium text-xl py-5 gap-3">
