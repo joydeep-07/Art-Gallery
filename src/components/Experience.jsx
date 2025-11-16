@@ -80,7 +80,7 @@ const Experience = () => {
             lineHeight: 1,
             letterSpacing: "0.03em",
           }}
-          className="text-neutral-800 text-[200px] leading-none"
+          className="text-neutral-800 text-[180px] leading-none"
         >
           Strategy
         </h1>
@@ -91,7 +91,7 @@ const Experience = () => {
             lineHeight: 1,
             letterSpacing: "0.03em",
           }}
-          className="text-neutral-800 text-[250px] leading-none"
+          className="text-neutral-800 text-[230px] leading-none"
         >
           Experience
         </h1>
