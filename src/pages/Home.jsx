@@ -8,7 +8,7 @@ import Footer from "../layouts/Footer";
 
 const Home = () => {
   return (
-    <div className="bg-[#fffceb]">
+    <div className="">
       <div className="relative z-10">
         <Hero />
         <Experience />
