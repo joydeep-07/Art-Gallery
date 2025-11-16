@@ -56,13 +56,13 @@ const Experience = () => {
         opacity: 1,
         y: 0,
         color: "#111111",
-        stagger: 0.02,
+        stagger: 3,
         ease: "power2.out",
         scrollTrigger: {
           trigger: sectionRef.current,
           start: "top 30%",
           end: "bottom 70%",
-          scrub: 0.5,
+          scrub: 1,
         },
       });
     }, sectionRef);
@@ -129,7 +129,7 @@ const Experience = () => {
             </p>
 
             {/* SECTION 3 */}
-            <h1 className="flex items-center font-medium text-xl py-5 gap-3">
+            {/* <h1 className="flex items-center font-medium text-xl py-5 gap-3">
        
               <span>
                 {splitTextToSpans(
@@ -141,7 +141,7 @@ const Experience = () => {
               {splitParagraphToSpans(
                 "Blending contemporary design with antique and classical artworks creates a compelling visual experience. It allows the viewer to see how history informs modern aesthetics. This interplay between the old and the new brings character, depth, and storytelling into any space — turning interiors into curated narratives rather than mere living environments."
               )}
-            </p>
+            </p> */}
           </div>
         </div>
       </div>

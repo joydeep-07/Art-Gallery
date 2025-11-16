@@ -4,6 +4,7 @@ import Navbar from "../layouts/Navbar";
 import Hero from "../components/Hero";
 import About from "../components/About";
 import Experience from "../components/Experience";
+import Footer from "../layouts/Footer";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <div className="relative z-10">
         <Hero />
         <Experience />
+        <Footer/>
       </div>
     </div>
   );
