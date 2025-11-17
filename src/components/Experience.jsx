@@ -96,7 +96,7 @@ const Experience = () => {
       </div>
 
       {/* RIGHT SCROLLING CONTENT */}
-      <div className="absolute top-20 right-20">
+      <div className="absolute top-[5vh] right-20">
         <div className="h-[500px] overflow-y-scroll w-[770px] p-5 ">
           <div style={{ fontFamily: "karatone" }}>
             {/* SECTION 1 */}
@@ -108,7 +108,7 @@ const Experience = () => {
 
             <p className="pb-5 text-justify">
               {splitParagraphToSpans(
-                "Paintings have always been a timeless form of expression — a language without words. Every brushstroke carries intention, emotion, and a whisper from the artist's world. From contemporary abstractions to classical realism, each canvas preserves a moment of thought, transforming imagination into something the eye can feel. These works invite viewers to pause, observe, and experience the silent dialogue between colour, texture, and light."
+                "Paintings have always been a timeless form of expression a language without words. Every brushstroke carries intention, emotion, and a whisper from the artist's world. From contemporary abstractions to classical realism, each canvas preserves a moment of thought, transforming imagination into something the eye can feel. These works invite viewers to pause, observe, and experience the silent dialogue between colour, texture, and light."
               )}
             </p>
 
@@ -123,7 +123,7 @@ const Experience = () => {
 
             <p className="pb-5 text-justify">
               {splitParagraphToSpans(
-                "Antique art pieces hold more than aesthetic beauty — they embody centuries of culture, craftsmanship, and tradition. Every sculpture, carved wooden frame, or hand-woven tapestry carries the fingerprints of a past era. These rare objects not only showcase the evolution of human creativity but also remind us of how artistry has shaped societies across history. Their aged surfaces, subtle imperfections, and preserved details speak of journeys far older than our own."
+                "Antique art pieces hold more than aesthetic beauty they embody centuries of culture, craftsmanship, and tradition. Every sculpture, carved wooden frame, or hand-woven tapestry carries the fingerprints of a past era. These rare objects not only showcase the evolution of human creativity but also remind us of how artistry has shaped societies across history. Their aged surfaces, subtle imperfections, and preserved details speak of journeys far older than our own."
               )}
             </p>
           </div>
