@@ -58,16 +58,23 @@ const Collections = () => {
               <div className="p-4">
                 <h2
                   style={{
-                    fontFamily: "karatone, sans-serif",
+                    fontFamily: "caesar, sans-serif",
                     lineHeight: 1,
                     letterSpacing: "0.05em",
                   }}
-                  className="mt-3 text-lg font-medium pb-3"
+                  className="mt-3 text-xl font-semibold pb-3"
                 >
                   {item.title}
                 </h2>
 
-                <p className="text-sm pb-5 text-gray-600">{item.description}</p>
+                <p
+                  style={{
+                    lineHeight: 1.4,
+                  }}
+                  className="text-sm pb-5 text-gray-600"
+                >
+                  {item.description}
+                </p>
                 <button className="border border-neutral-800 text-neutral-800 px-4 py-2 rounded-[4px]">
                   Read More
                 </button>
