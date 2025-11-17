@@ -30,7 +30,7 @@ const AreWeWorking = () => {
         start: "top top",
         end: `+=${scrollWidth}`,
         pin: true,
-        scrub: 4,
+        scrub: 1.2,
         anticipatePin: 1,
       },
     });
