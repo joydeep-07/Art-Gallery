@@ -5,6 +5,8 @@ import Hero from "../components/Hero";
 import About from "../components/About";
 import Experience from "../components/Experience";
 import Footer from "../layouts/Footer";
+import BlogBanner from "../components/BlogBanner";
+// import Mentoring from "../components/Mentoring";
 
 const Home = () => {
   return (
@@ -12,6 +14,7 @@ const Home = () => {
       <div className="relative z-10">
         <Hero />
         <Experience />
+       <BlogBanner/>
         <Footer/>
       </div>
     </div>
