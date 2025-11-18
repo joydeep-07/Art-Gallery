@@ -13,9 +13,10 @@ const Home = () => {
     <div className="">
       <div className="relative z-10">
         <Hero />
+        <BlogBanner />
         <Experience />
-       <BlogBanner/>
-        <Footer/>
+
+        <Footer />
       </div>
     </div>
   );

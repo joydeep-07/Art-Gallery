@@ -2,7 +2,7 @@ import React from "react";
 
 const BlogBanner = () => {
   return (
-    <div className="h-screen flex justify-center pt-35">
+    <div className="h-screen flex flex-col items-center pt-10">
       <div className="h-[500px] flex px-25 text-[#fffceb] bg-neutral-900">
         <div className="left w-1/2">
           <p className="mt-10 pl-0 p-5 text-xs">
@@ -49,6 +49,19 @@ const BlogBanner = () => {
             Read More
           </button>
         </div>
+      </div>
+      <div className="mt-15 p-5 flex justify-center items-center flex-col ">
+        <h1 style={{ fontFamily: "karatone" }} className="text-[100px]">
+          States of matter, or otherwise a blog
+        </h1>
+        <p
+          style={{ fontFamily: "karatone" }}
+          className="text-center text-xl max-w-4xl"
+        >
+          This text is not a recipe, but an account of everyday situations in
+          which choices, small gestures and mindfulness became the foundation of
+          a sensitive leadership style.
+        </p>
       </div>
     </div>
   );
