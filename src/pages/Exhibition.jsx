@@ -1,13 +1,16 @@
-import React from 'react'
-import Footer from '../layouts/Footer';
+import React from "react";
+import Footer from "../layouts/Footer";
 
 const Exhibition = () => {
   return (
-    <>
-      <div className="pt-25 text-5xl text-center">Exhibition</div>
-      <Footer/>
-    </>
-  );
-}
+    <div className="min-h-screen flex flex-col">
+      {/* PAGE CONTENT */}
+      <div className=" flex-grow text-5xl text-center">Exhibition</div>
 
-export default Exhibition
+      {/* FOOTER STAYS AT BOTTOM */}
+      <Footer />
+    </div>
+  );
+};
+
+export default Exhibition;
