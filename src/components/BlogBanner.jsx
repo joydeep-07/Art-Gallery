@@ -3,7 +3,7 @@ import React from "react";
 const BlogBanner = () => {
   return (
     <div className="h-screen flex justify-center pt-35">
-      <div className="h-[500px] flex px-25 text-[white] bg-neutral-900">
+      <div className="h-[500px] flex px-25 text-[#fffceb] bg-neutral-900">
         <div className="left w-1/2">
           <p className="mt-10 pl-0 p-5 text-xs">
             States of matter, or otherwise a blog
