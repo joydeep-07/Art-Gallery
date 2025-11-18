@@ -1,12 +1,32 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import tree from "../assets/images/trees.png";
+import { IoMailOutline, IoLogoLinkedin } from "react-icons/io5";
 
 const Footer = () => {
   return (
-    <footer className="h-[250px] flex flex-col justify-between border">
+    <footer className="h-[250px] flex flex-col justify-between">
       {/* Top Space / Branding Placeholder */}
-      <div className="flex-1 flex justify-center items-center">
-        {/* You can place a logo or tagline here later */}
+      <div className=" flex gap-10 justify-center items-center">
+        <div>
+          <img src={tree} className="h-50" alt="" />
+        </div>
+        <div>
+          <h2 className="max-w-md text-sm">
+            They say happiness is when you plant a tree for your grandchildren
+            to rest under. Let me know if this approach resonates with you .
+          </h2>
+          <div className="flex gap-10 text-xs pt-5">
+            <div className="flex justify-center items-center gap-2">
+              <IoMailOutline />
+              <h3>joydeeprnp8821@gmail.com</h3>
+            </div>
+            <div className="flex justify-center items-center gap-2">
+              <IoLogoLinkedin />
+              <h3> / Linkedin</h3>
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* Footer Bottom Section */}
@@ -43,10 +63,6 @@ const Footer = () => {
           This website only uses essential cookies. We do not use tracking or
           advertising cookies. Read more in our privacy policy.
         </p>
-
-   
-
-        
       </div>
     </footer>
   );
