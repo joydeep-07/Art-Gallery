@@ -1,9 +1,65 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  const [showNavbar, setShowNavbar] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+  const [scrolledEnough, setScrolledEnough] = useState(false);
+  const hideTimeout = useRef(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > 200) {
+        setScrolledEnough(true);
+      } else {
+        setScrolledEnough(false);
+        setShowNavbar(true); // Don't hide navbar until scrolled 200px
+      }
+
+      if (currentScrollY > lastScrollY && currentScrollY > 200) {
+        // scrolling down
+        setShowNavbar(false);
+      } else if (currentScrollY < lastScrollY) {
+        // scrolling up
+        setShowNavbar(true);
+      }
+
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      if (hideTimeout.current) clearTimeout(hideTimeout.current);
+    };
+  }, [lastScrollY]);
+
+  const handleMouseEnter = () => {
+    if (hideTimeout.current) {
+      clearTimeout(hideTimeout.current);
+    }
+    setShowNavbar(true);
+  };
+
+  const handleMouseLeave = () => {
+    if (scrolledEnough) {
+      hideTimeout.current = setTimeout(() => {
+        setShowNavbar(false);
+      }, 5000);
+    }
+  };
+
   return (
-    <nav className="fixed top-0 w-full px-[70px] backdrop-blur-[2px] z-100">
+    <nav
+      className={`fixed top-0 w-full px-[70px] backdrop-blur-[2px] z-100 transition-transform duration-500 ease-in-out ${
+        showNavbar ? "translate-y-0" : "-translate-y-[100%]"
+      }`}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
       <div className="w-full px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo Section */}
