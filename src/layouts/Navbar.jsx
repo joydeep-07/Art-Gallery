@@ -91,7 +91,7 @@ const Navbar = () => {
                   to="/are/we/working"
                   className="text-amber-900/80 hover:text-amber-700 tracking-wide transition-colors duration-300 relative py-2"
                 >
-                  About Us
+                  About Me
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-700 transition-all duration-300 group-hover:w-full"></span>
                 </Link>
               </li>
@@ -101,7 +101,7 @@ const Navbar = () => {
                   to="/collections"
                   className="text-amber-900/80 hover:text-amber-700 tracking-wide transition-colors duration-300 relative py-2"
                 >
-                  Collections
+                  States of Matter
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-700 transition-all duration-300 group-hover:w-full"></span>
                 </Link>
               </li>
