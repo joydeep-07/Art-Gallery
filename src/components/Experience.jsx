@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import sketch from '../assets/paintings/sketch.jpg'
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -122,7 +123,7 @@ const Experience = () => {
           <div className="p-3 border">
             <img
               className=" h-110 border"
-              src="https://i.pinimg.com/1200x/95/62/a2/9562a241f97669bb4549a84510c0ad44.jpg"
+              src={sketch}
               alt=""
             />
           </div>
