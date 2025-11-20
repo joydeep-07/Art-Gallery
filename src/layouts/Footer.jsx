@@ -58,9 +58,9 @@ const Footer = () => {
           </Link>
         </nav>
 
-        <div className="w-full h-[1px] bg-neutral-800"></div>
+        <div className="w-full hidden md:flex h-[1px] bg-neutral-800"></div>
 
-        <p className="text-xs text-center text-gray-400 leading-relaxed px-3">
+        <p className="text-[10px] md:text-xs text-center text-gray-400 leading-relaxed px-3">
           This website only uses essential cookies. We do not use tracking or
           advertising cookies. Read more in our privacy policy.
         </p>

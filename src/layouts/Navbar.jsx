@@ -5,7 +5,22 @@ const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [scrolledEnough, setScrolledEnough] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
   const hideTimeout = useRef(null);
+
+  // Check screen size on mount and resize
+  useEffect(() => {
+    const checkScreenSize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    checkScreenSize();
+    window.addEventListener("resize", checkScreenSize);
+
+    return () => {
+      window.removeEventListener("resize", checkScreenSize);
+    };
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -45,7 +60,7 @@ const Navbar = () => {
   };
 
   const handleMouseLeave = () => {
-    if (scrolledEnough) {
+    if (scrolledEnough && !isMobile) {
       hideTimeout.current = setTimeout(() => {
         setShowNavbar(false);
       }, 5000);
@@ -54,14 +69,14 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 w-full px-[70px] backdrop-blur-[2px] z-100 transition-transform duration-500 ease-in-out ${
+      className={`fixed top-0 w-full px-4 sm:px-6 md:px-[70px] backdrop-blur-[1px] z-50 transition-transform duration-500 ease-in-out ${
         showNavbar ? "translate-y-0" : "-translate-y-[100%]"
       }`}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
+      onMouseEnter={isMobile ? undefined : handleMouseEnter}
+      onMouseLeave={isMobile ? undefined : handleMouseLeave}
     >
-      <div className="w-full px-8">
-        <div className="flex justify-between items-center h-20">
+      <div className="w-full px-2 sm:px-4 md:px-8">
+        <div className="flex justify-between items-center h-15 sm:h-18 md:h-20">
           {/* Logo Section */}
           <div className="flex items-center">
             <div className="text-center cursor-pointer">
@@ -70,14 +85,14 @@ const Navbar = () => {
                 className="flex items-baseline"
                 style={{ fontFamily: "caesar, sans-serif" }}
               >
-                <span className="text-amber-800 font-extrabold text-2xl pr-2 tracking-tight">
+                <span className="text-amber-800 font-extrabold text-lg sm:text-xl md:text-2xl pr-1 sm:pr-2 tracking-tight">
                   ART
                 </span>
-                <span className="text-amber-600/80 font-extrabold text-2xl tracking-wider">
+                <span className="text-amber-600/80 font-extrabold text-lg sm:text-xl md:text-2xl tracking-wider">
                   GALLERY
                 </span>
               </Link>
-              <p className="text-xs text-amber-700/70 tracking-wide">
+              <p className="hidden sm:block text-xs text-amber-700/70 tracking-wide">
                 A curated collection of exquisite artworks
               </p>
             </div>
@@ -85,11 +100,11 @@ const Navbar = () => {
 
           {/* Navigation Links */}
           <div className="hidden md:block">
-            <ul className="flex space-x-12">
+            <ul className="flex space-x-8 lg:space-x-12">
               <li className="group">
                 <Link
                   to="/are/we/working"
-                  className="text-amber-900/80 hover:text-amber-700 tracking-wide transition-colors duration-300 relative py-2"
+                  className="text-amber-900/80 hover:text-amber-700 tracking-wide transition-colors duration-300 relative py-2 text-sm lg:text-base"
                 >
                   About Me
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-700 transition-all duration-300 group-hover:w-full"></span>
@@ -99,7 +114,7 @@ const Navbar = () => {
               <li className="group">
                 <Link
                   to="/collections"
-                  className="text-amber-900/80 hover:text-amber-700 tracking-wide transition-colors duration-300 relative py-2"
+                  className="text-amber-900/80 hover:text-amber-700 tracking-wide transition-colors duration-300 relative py-2 text-sm lg:text-base"
                 >
                   States of Matter
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-700 transition-all duration-300 group-hover:w-full"></span>
@@ -109,7 +124,7 @@ const Navbar = () => {
               <li className="group">
                 <Link
                   to="/exhibition"
-                  className="text-amber-900/80 hover:text-amber-700 tracking-wide transition-colors duration-300 relative py-2"
+                  className="text-amber-900/80 hover:text-amber-700 tracking-wide transition-colors duration-300 relative py-2 text-sm lg:text-base"
                 >
                   Exhibitions
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-700 transition-all duration-300 group-hover:w-full"></span>
@@ -119,7 +134,7 @@ const Navbar = () => {
               <li className="group">
                 <Link
                   to="/contacts"
-                  className="text-amber-900/80 hover:text-amber-700 tracking-wide transition-colors duration-300 relative py-2"
+                  className="text-amber-900/80 hover:text-amber-700 tracking-wide transition-colors duration-300 relative py-2 text-sm lg:text-base"
                 >
                   Contact
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-700 transition-all duration-300 group-hover:w-full"></span>
@@ -130,9 +145,9 @@ const Navbar = () => {
 
           {/* Mobile Menu Button */}
           <div className="md:hidden">
-            <button className="text-amber-800 hover:text-amber-700 transition-colors duration-300">
+            <button className="text-amber-800 hover:text-amber-700 transition-colors duration-300 p-2">
               <svg
-                className="w-6 h-6"
+                className="w-5 h-5 sm:w-6 sm:h-6"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
