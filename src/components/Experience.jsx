@@ -43,7 +43,9 @@ const Experience = () => {
   }, []);
 
   return (
-    <div ref={sectionRef} className="h-screen relative px-5 max-md:h-auto">
+    <div
+    //  ref={sectionRef}
+      className="h-screen relative px-5 max-md:h-auto">
       {/* LEFT SIDE — unchanged on desktop */}
       <div className="absolute bottom-5 left-5 max-md:static max-md:text-center">
         <h1
@@ -77,7 +79,7 @@ const Experience = () => {
       {/* RIGHT SCROLLING CONTENT */}
       <div className="absolute top-[5vh] right-20 max-xl:right-10 max-lg:right-5 max-md:static">
         <div
-          ref={contentRef}
+          // ref={contentRef}
           className="h-[500px] overflow-y-scroll w-[770px] p-5 
                      max-lg:w-[600px] max-md:w-full max-md:h-auto max-md:overflow-visible"
         >
