@@ -1,5 +1,5 @@
 import React from "react";
-import { Newsletter } from "../utils/Newsletter"; // <-- adjust if using default export
+import { Newsletter } from "../utils/Newsletter";
 import Footer from "../layouts/Footer";
 
 const Collections = () => {
@@ -7,6 +7,7 @@ const Collections = () => {
     <>
       <div className="flex justify-center items-center p-5 pt-25">
         <div className="w-7xl">
+          {/* -------- HEADING -------- */}
           <div>
             <h1
               style={{
@@ -14,7 +15,7 @@ const Collections = () => {
                 lineHeight: 1,
                 letterSpacing: "0.03em",
               }}
-              className="text-neutral-800 text-[80px] leading-none"
+              className="text-neutral-800 text-[50px] sm:text-[65px] md:text-[80px] leading-none"
             >
               States
             </h1>
@@ -25,20 +26,21 @@ const Collections = () => {
                 lineHeight: 1,
                 letterSpacing: "0.03em",
               }}
-              className="text-neutral-800 text-[90px] leading-none"
+              className="text-neutral-800 text-[55px] sm:text-[75px] md:text-[90px] leading-none"
             >
               of Matter,
             </h1>
 
-            <p className="max-w-md text-sm">
+            <p className="max-w-md text-xs sm:text-sm mt-3">
               For more design help, inspiration, and case studies, sign up for
               our newsletter (by signing up, you accept our privacy policy).
             </p>
           </div>
 
-          <div className="pt-7 gap-2 flex">
+          {/* -------- INPUT SECTION -------- */}
+          <div className="pt-7 gap-2 flex flex-col sm:flex-row w-full sm:w-auto">
             <input
-              className="p-3 w-xl rounded-[4px] border"
+              className="p-3 w-full sm:w-xl rounded-[4px] border"
               type="email"
               placeholder="Enter your email"
             />
@@ -47,14 +49,14 @@ const Collections = () => {
             </button>
           </div>
 
-          {/* 🔥 MAP NEWSLETTERS HERE */}
-          <div className="mt-10 grid grid-cols-3 gap-5">
+          {/* -------- NEWSLETTER GRID -------- */}
+          <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
             {Newsletter.map((item) => (
-              <div key={item.id} className="  transition">
+              <div key={item.id} className="transition">
                 <img
                   src={item.image}
                   alt={item.title}
-                  className="w-full h-50 object-cover"
+                  className="w-full h-48 sm:h-56 md:h-50 object-cover rounded-[4px]"
                 />
 
                 <div className="p-4">
@@ -64,19 +66,18 @@ const Collections = () => {
                       lineHeight: 1,
                       letterSpacing: "0.05em",
                     }}
-                    className="mt-3 text-xl font-semibold pb-3"
+                    className="mt-3 text-lg sm:text-xl font-semibold pb-3"
                   >
                     {item.title}
                   </h2>
 
                   <p
-                    style={{
-                      lineHeight: 1.4,
-                    }}
+                    style={{ lineHeight: 1.4 }}
                     className="text-sm pb-5 text-gray-600"
                   >
                     {item.description}
                   </p>
+
                   <button className="border border-neutral-800 text-neutral-800 px-4 py-2 rounded-[4px]">
                     Read More
                   </button>
@@ -86,7 +87,7 @@ const Collections = () => {
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 };
