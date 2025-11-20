@@ -189,17 +189,19 @@ const AreWeWorking = () => {
                   repudiandae libero reprehenderit enim!
                 </h2>
 
-                {!isMobile && (
-                  <h2
-                    style={{ fontFamily: "karatone" }}
-                    className="text-neutral-700 text-lg lg:text-xl max-w-md text-justify whitespace-normal"
-                  >
-                    I've been designing for 17 years. My background in art and
-                    technology allows me to flexibly manage the product
-                    development process. I've led design teams, building bridges
-                    between stakeholders, users, and team members.
-                  </h2>
-                )}
+                <h2
+                  style={{ fontFamily: "karatone" }}
+                  className={`text-neutral-700 text-justify ${
+                    isMobile
+                      ? "text-base md:text-lg max-w-4xl mx-auto"
+                      : "text-lg lg:text-xl max-w-lg whitespace-normal"
+                  }`}
+                >
+                  I've been designing for 17 years. My background in art and
+                  technology allows me to flexibly manage the product
+                  development process. I've led design teams, building bridges
+                  between stakeholders, users, and team members.
+                </h2>
               </div>
             </div>
           </div>
@@ -223,7 +225,7 @@ const AreWeWorking = () => {
             )}
 
             <div className={isMobile ? "w-full max-w-4xl text-center" : ""}>
-              <div className="flex gap-10">
+              <div className="flex md:gap-10">
                 <div>
                   {!isMobile && (
                     <div className="p-3 border">
