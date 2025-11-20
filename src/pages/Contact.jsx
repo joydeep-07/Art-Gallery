@@ -4,19 +4,19 @@ import Footer from "../layouts/Footer";
 const Contact = () => {
   return (
     <>
-      <div className="flex justify-center items-center p-5 pt-23.5">
-        <div className="w-7xl flex p-5 justify-between mx-auto">
+      <div className="flex justify-center items-center p-5 pt-10 md:pt-23.5">
+        <div className="w-full max-w-7xl flex flex-col md:flex-row p-5 justify-between mx-auto gap-10 md:gap-0">
           {/* ---------- HEADING SECTION ---------- */}
-          <div className="space-y-3">
+          <div className="space-y-3 text-center md:text-left">
             <h1
               style={{
                 fontFamily: "karatone, sans-serif",
                 lineHeight: 1,
                 letterSpacing: "0.03em",
               }}
-              className="text-neutral-800 text-[75px] md:text-[90px] leading-none"
+              className="text-neutral-800 text-[45px] sm:text-[55px] md:text-[90px] leading-none"
             >
-              Get in Touch 
+              Get in Touch
             </h1>
 
             <h1
@@ -25,20 +25,20 @@ const Contact = () => {
                 lineHeight: 1,
                 letterSpacing: "0.03em",
               }}
-              className="text-neutral-800 text-[75px] md:text-[90px] leading-none"
+              className="text-neutral-800 text-[45px] sm:text-[55px] md:text-[90px] leading-none"
             >
               With Us,
             </h1>
 
-            <p className="max-w-md text-sm text-neutral-600 pt-2">
+            <p className="max-w-md text-sm text-neutral-600 pt-2 mx-auto md:mx-0">
               Feel free to reach out for collaborations, projects, inquiries, or
               just to say hello. We would love to hear from you.
             </p>
           </div>
 
           {/* ---------- CONTACT FORM ---------- */}
-          <div>
-            <div className="max-w-xl space-y-5">
+          <div className="w-full md:w-auto flex justify-center md:justify-end">
+            <div className="w-full max-w-xl space-y-5">
               <input
                 type="text"
                 placeholder="Your Name"
@@ -62,9 +62,9 @@ const Contact = () => {
               </button>
             </div>
           </div>
-          
         </div>
       </div>
+
       <Footer />
     </>
   );
