@@ -44,8 +44,9 @@ const Experience = () => {
 
   return (
     <div
-    //  ref={sectionRef}
-      className="h-screen relative max-md:h-auto">
+      //  ref={sectionRef}
+      className="h-screen relative max-md:h-auto"
+    >
       {/* LEFT SIDE — unchanged on desktop */}
       <div className="absolute bottom-5 left-5 max-md:static max-md:text-center">
         <h1
@@ -77,10 +78,10 @@ const Experience = () => {
       </div>
 
       {/* RIGHT SCROLLING CONTENT */}
-      <div className=" max-xl:right-10 flex max-lg:right-5 max-md:static">
+      <div className=" max-xl:right-10 px-10 flex max-lg:right-5 max-md:static">
         <div
           // ref={contentRef}
-          className=" overflow-y-scroll w-1/2 p-5 
+          className=" overflow-y-scroll w-2/3 p-5 
                      max-lg:w-[600px] max-md:w-full max-md:h-auto max-md:overflow-visible"
         >
           <div style={{ fontFamily: "karatone" }}>
@@ -90,7 +91,7 @@ const Experience = () => {
             </h1>
 
             <p className="fade-item pb-5 text-justify text-[15px] max-md:text-base">
-              Paintings have always been a timeless form of expression — a
+              Paintings have always been a timeless form of expression a
               language without words. Every brushstroke carries intention,
               emotion, and a whisper from the artist's world. From contemporary
               abstractions to classical realism, each canvas preserves a moment
@@ -105,19 +106,26 @@ const Experience = () => {
             </h1>
 
             <p className="fade-item pb-5 text-justify text-[15px] max-md:text-base">
-              Antique art pieces hold more than aesthetic beauty — they embody
+              Antique art pieces hold more than aesthetic beauty they embody
               centuries of culture, craftsmanship, and tradition. Every
               sculpture, carved wooden frame, or hand-woven tapestry carries the
               fingerprints of a past era. These rare objects not only showcase
               the evolution of human creativity but also remind us of how
               artistry has shaped societies across history. Their aged surfaces,
               subtle imperfections, and preserved details speak of journeys far
-              older than our own.
+              older than our own. <br /> <br />
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi sit pariatur dolores dignissimos impedit eum odio, quasi, natus voluptates necessitatibus molestiae! Dolore fuga excepturi officia repellendus ipsam culpa, rem iusto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum sit, molestiae eveniet labore mollitia earum ut magnam aspernatur animi provident.
             </p>
           </div>
         </div>
-        <div className="border w-1/2 hidden md:flex">
-          jvfjd
+        <div className="w-1/3 hidden justify-center items-center md:flex">
+          <div className="p-3 border">
+            <img
+              className=" h-110 border"
+              src="https://i.pinimg.com/1200x/95/62/a2/9562a241f97669bb4549a84510c0ad44.jpg"
+              alt=""
+            />
+          </div>
         </div>
       </div>
     </div>
