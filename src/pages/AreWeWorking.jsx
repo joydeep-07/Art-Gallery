@@ -103,7 +103,7 @@ const AreWeWorking = () => {
             <div
               className={`${
                 isMobile
-                  ? "min-h-screen w-full flex flex-col items-center justify-center py-10 px-6"
+                  ? "min-h-screen w-full flex flex-col items-center justify-center md:py-10 px-6"
                   : "flex-shrink-0 w-screen flex justify-center gap-8 lg:gap-20 px-6 md:px-16 pb-40"
               }`}
             >
@@ -123,10 +123,10 @@ const AreWeWorking = () => {
 
                 <h2
                   style={{ fontFamily: "karatone" }}
-                  className={`text-neutral-700 text-justify ${
+                  className={`text-neutral-700 pt-10 text-justify ${
                     isMobile
-                      ? "pt-8 text-lg md:text-xl max-w-2xl mx-auto whitespace-normal"
-                      : "pt-8 lg:pt-15 text-lg lg:text-2xl max-w-2xl whitespace-normal"
+                      ? "text-base md:text-lg max-w-4xl mx-auto"
+                      : "text-lg lg:text-xl max-w-lg whitespace-normal"
                   }`}
                 >
                   I've been designing for 17 years. My background in art and
@@ -151,8 +151,8 @@ const AreWeWorking = () => {
             <div
               className={`${
                 isMobile
-                  ? "min-h-screen w-full flex flex-col items-center justify-center py-10 px-6"
-                  : "flex-shrink-0 w-screen flex justify-center gap-8 lg:gap-16 px-6 md:px-16 pb-40"
+                  ? " w-full flex flex-col items-center justify-center py-10 px-6"
+                  : "flex-shrink-0 w-screen flex justify-center gap-8 lg:gap-16 px-6 md:px-16 md:pb-40"
               }`}
             >
               <div
@@ -215,7 +215,7 @@ const AreWeWorking = () => {
             <div
               className={`${
                 isMobile
-                  ? "min-h-screen w-full flex flex-col items-center justify-center py-10 px-6"
+                  ? "min-h-screen w-full flex flex-col items-center justify-center md:py-10 px-6"
                   : "flex-shrink-0 w-screen flex justify-center gap-12 lg:gap-25 px-6 md:px-16 pb-40"
               }`}
             >
@@ -309,8 +309,8 @@ const AreWeWorking = () => {
           )}
         </section>
       </div>
-      <div className="md:hidden">
-        <Footer/>
+      <div className="md:hidden pt-30">
+        <Footer />
       </div>
     </>
   );
