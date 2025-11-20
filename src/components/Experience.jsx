@@ -45,7 +45,7 @@ const Experience = () => {
   return (
     <div
     //  ref={sectionRef}
-      className="h-screen relative px-5 max-md:h-auto">
+      className="h-screen relative max-md:h-auto">
       {/* LEFT SIDE — unchanged on desktop */}
       <div className="absolute bottom-5 left-5 max-md:static max-md:text-center">
         <h1
@@ -66,7 +66,7 @@ const Experience = () => {
             letterSpacing: "0.03em",
           }}
           className="text-neutral-800 text-[180px] leading-none 
-             max-lg:text-[120px] max-md:text-[70px] flex items-center gap-5"
+             max-lg:text-[120px] max-md:text-[40px] pt-2 md:pt-0 flex justify-center  gap-5"
         >
           {/* “Visual” — laptop only */}
           <span className="hidden md:inline-block">Visual</span>

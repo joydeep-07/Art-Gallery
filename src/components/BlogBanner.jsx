@@ -38,17 +38,18 @@ const BlogBanner = () => {
           px-6 sm:px-10 md:px-25 
           text-[#fffceb] 
           bg-neutral-900
+          pb-10
         "
       >
         {/* LEFT SIDE */}
         <div className="left w-full md:w-1/2">
-          <p className="mt-6 md:mt-10 p-3 md:p-5 text-xs">
+          <p className="mt-6 md:mt-10 p-3 pl-0 md:p-5 text-xs">
             States of matter, or otherwise a blog
           </p>
 
           <div className="flex flex-col sm:flex-row">
             <img
-              className="h-40 sm:h-48 pr-0 sm:pr-6 mb-4 sm:mb-0"
+              className="h-50 sm:h-48 pr-0 sm:pr-6 mb-4 sm:mb-0"
               src="https://framerusercontent.com/images/Jq9CvZn5nyua3F6GHd8cdtsLduo.png?scale-down-to=512&width=2590&height=1884"
               alt=""
             />
@@ -66,19 +67,18 @@ const BlogBanner = () => {
             </h1>
           </div>
 
-          <p className="p-3 md:p-5 mt-2 text-sm sm:text-base">
+          <p className=" md:p-5 mt-2 text-sm sm:text-base">
             This text is not a recipe, but an account of everyday situations in
             which choices, small gestures and mindfulness became the foundation
             of a sensitive leadership style.
           </p>
-
-          <button className="py-2 px-5 m-3 ml-0 border rounded-full text-sm sm:text-base">
+          <button className="py-2 px-5 mt-5 ml-0 border rounded-full text-sm sm:text-base">
             Read More
           </button>
         </div>
 
         {/* RIGHT SIDE */}
-        <div className="right w-full md:w-1/2 p-3 sm:p-6 md:p-10 md:pt-20">
+        <div className="right w-full md:w-1/2 sm:p-6 pt-5 md:p-10 md:pt-20">
           <h1
             style={{ fontFamily: "karatone", lineHeight: 1 }}
             className="
@@ -92,13 +92,13 @@ const BlogBanner = () => {
             in the peak-end
           </h1>
 
-          <p className="p-3 md:p-5 mt-6 md:mt-20 text-sm sm:text-base">
+          <p className="md:p-5 mt-6 md:mt-20 text-sm sm:text-base">
             How memories of experience are formed—what we really remember from
             brand contact. And how to avoid shooting yourself in the foot with a
             logo.
           </p>
 
-          <button className="py-2 px-5 m-3 ml-0 border rounded-full text-sm sm:text-base">
+          <button className="py-2 px-5 mt-5 ml-0 border rounded-full text-sm sm:text-base">
             Read More
           </button>
         </div>
