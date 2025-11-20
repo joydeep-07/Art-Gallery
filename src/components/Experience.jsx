@@ -77,10 +77,10 @@ const Experience = () => {
       </div>
 
       {/* RIGHT SCROLLING CONTENT */}
-      <div className="absolute top-[5vh] right-20 max-xl:right-10 max-lg:right-5 max-md:static">
+      <div className=" max-xl:right-10 flex max-lg:right-5 max-md:static">
         <div
           // ref={contentRef}
-          className="h-[500px] overflow-y-scroll w-[770px] p-5 
+          className=" overflow-y-scroll w-1/2 p-5 
                      max-lg:w-[600px] max-md:w-full max-md:h-auto max-md:overflow-visible"
         >
           <div style={{ fontFamily: "karatone" }}>
@@ -115,6 +115,9 @@ const Experience = () => {
               older than our own.
             </p>
           </div>
+        </div>
+        <div className="border w-1/2">
+          jvfjd
         </div>
       </div>
     </div>

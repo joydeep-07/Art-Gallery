@@ -2,7 +2,34 @@ import React from "react";
 
 const BlogBanner = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center pt-10">
+    <div className="min-h-screen flex pb-20 flex-col items-center pt-10">
+      <div className="mt-10 sm:mt-15 p-5 flex flex-col pb-15 justify-center items-center text-center">
+        <h1
+          style={{ fontFamily: "karatone" }}
+          className="
+            text-[38px]
+            sm:text-[60px]
+            md:text-[80px]
+            lg:text-[100px]
+          "
+        >
+          States of matter, or otherwise a blog
+        </h1>
+
+        <p
+          style={{ fontFamily: "karatone" }}
+          className="
+            text-center 
+            text-base sm:text-lg md:text-xl 
+            max-w-4xl
+            mt-4
+          "
+        >
+          This text is not a recipe, but an account of everyday situations in
+          which choices, small gestures and mindfulness became the foundation of
+          a sensitive leadership style.
+        </p>
+      </div>
       {/* MAIN BANNER */}
       <div
         className="
@@ -78,33 +105,6 @@ const BlogBanner = () => {
       </div>
 
       {/* TITLE BELOW BANNER */}
-      <div className="mt-10 sm:mt-15 p-5 flex flex-col justify-center items-center text-center">
-        <h1
-          style={{ fontFamily: "karatone" }}
-          className="
-            text-[38px]
-            sm:text-[60px]
-            md:text-[80px]
-            lg:text-[100px]
-          "
-        >
-          States of matter, or otherwise a blog
-        </h1>
-
-        <p
-          style={{ fontFamily: "karatone" }}
-          className="
-            text-center 
-            text-base sm:text-lg md:text-xl 
-            max-w-4xl
-            mt-4
-          "
-        >
-          This text is not a recipe, but an account of everyday situations in
-          which choices, small gestures and mindfulness became the foundation of
-          a sensitive leadership style.
-        </p>
-      </div>
     </div>
   );
 };
