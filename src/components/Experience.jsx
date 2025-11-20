@@ -116,7 +116,7 @@ const Experience = () => {
             </p>
           </div>
         </div>
-        <div className="border w-1/2">
+        <div className="border w-1/2 hidden md:flex">
           jvfjd
         </div>
       </div>
