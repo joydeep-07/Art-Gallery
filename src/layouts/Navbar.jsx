@@ -217,7 +217,7 @@ const Navbar = () => {
           </button>
 
           {/* Navigation Links */}
-          <ul className="flex flex-col space-y-6">
+          <ul className="flex flex-col space-y-4">
             <li>
               <Link
                 to="/are/we/working"
@@ -266,7 +266,7 @@ const Navbar = () => {
           {/* Bottom Section */}
           <div className="mt-auto pb-8">
             <div className="border-t border-amber-200 pt-6">
-              <p className="text-amber-700/70 text-sm text-center">
+              <p className="text-amber-700/70 text-xs text-center">
                 A curated collection of exquisite artworks
               </p>
             </div>
@@ -277,7 +277,7 @@ const Navbar = () => {
       {/* Overlay */}
       {isSidePanelOpen && (
         <div
-          className="fixed inset-0 bg-black/20 z-40 md:hidden"
+          className="fixed inset-0 bg-black/20 backdrop-blur-[2px] z-40 md:hidden"
           onClick={closeSidePanel}
         />
       )}
