@@ -104,7 +104,7 @@ const AreWeWorking = () => {
               className={`${
                 isMobile
                   ? "min-h-screen w-full flex flex-col items-center justify-center md:py-10 px-6"
-                  : "flex-shrink-0 w-screen flex justify-center gap-8 lg:gap-20 px-6 md:px-16 pb-40"
+                  : "flex-shrink-0 w-screen flex justify-center gap-8 lg:gap-20 px-6 md:px-16 pb-[10vh]"
               }`}
             >
               <div
@@ -317,11 +317,11 @@ const AreWeWorking = () => {
 
           {/* Main floating text (desktop only) */}
           {!isMobile && (
-            <div className="absolute bottom-5 left-0 w-full z-50 overflow-hidden">
+            <div className="absolute bottom-0 left-0 w-full z-50 overflow-hidden">
               <div ref={mainTextContentRef} className="flex whitespace-nowrap">
                 <h1
                   style={{ fontFamily: "karatone", lineHeight: 1.2 }}
-                  className="text-6xl lg:text-8xl xl:text-[150px] font-bold text-neutral-800 inline-block ml-6"
+                  className="text-6xl lg:text-8xl xl:text-[20vh] font-bold text-neutral-800 inline-block ml-6"
                 >
                   We create Experience that tells a Story
                 </h1>
