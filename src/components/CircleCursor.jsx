@@ -45,7 +45,8 @@ const CircleCursor = ({ targetId, hoverId }) => {
   if (!isActive) return null;
 
   return (
-    <div className="hidden md:flex"
+    <div // REMOVED: transition-all duration-300 // The size change effect is still smooth because the `size` property changes smoothly via state // but the position (top/left) changes instantaneously.
+      className="pointer-events-none hidden md:flex fixed z-[60] bg-white"
       style={{
         width: `${size}px`,
         height: `${size}px`,
