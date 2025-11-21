@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 const CircleCursor = ({ targetId, hoverId }) => {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const [isActive, setIsActive] = useState(false);
-  const [size, setSize] = useState(20); // Mouse tracking and active zone logic (using mousePos directly)
+  const [size, setSize] = useState(50); // Mouse tracking and active zone logic (using mousePos directly)
 
   useEffect(() => {
     const moveHandler = (e) => {
@@ -30,8 +30,8 @@ const CircleCursor = ({ targetId, hoverId }) => {
     const hover = document.getElementById(hoverId);
     if (!hover) return;
 
-    const enter = () => setSize(100);
-    const leave = () => setSize(20);
+    const enter = () => setSize(150);
+    const leave = () => setSize(50);
 
     hover.addEventListener("mouseenter", enter);
     hover.addEventListener("mouseleave", leave);
