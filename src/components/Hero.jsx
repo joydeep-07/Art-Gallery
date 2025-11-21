@@ -2,7 +2,8 @@ import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import About from "./About";
-
+import CircleCursor from "./CircleCursor";
+import { BsCursorFill } from "react-icons/bs";
 gsap.registerPlugin(ScrollTrigger);
 
 const Hero = () => {
@@ -29,7 +30,10 @@ const Hero = () => {
 
   return (
     <>
-      <div className="min-h-screen flex flex-col items-center pt-22 justify-center relative overflow-hidden">
+      <div
+        id="hero"
+        className="min-h-screen flex flex-col items-center pt-22 justify-center relative overflow-hidden"
+      >
         {/* Background elements (unchanged) */}
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-white/5"></div>
@@ -41,12 +45,14 @@ const Hero = () => {
         <div className="text-center px-4 sm:px-6 md:px-8 max-w-6xl mx-auto relative z-10">
           {/* MAIN HEADING */}
           <div
-          
             style={{
               fontFamily: "karatone, sans-serif",
               lineHeight: 1,
               letterSpacing: "0.03em",
+              color: "black",
+              mixBlendMode: "multiply",
             }}
+            id="text"
             className="
               text-neutral-800 
               text-[60px] 
@@ -121,7 +127,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-
+      <CircleCursor targetId="hero" hoverId="text" />
       <About />
     </>
   );
