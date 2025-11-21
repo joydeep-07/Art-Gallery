@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import sketch from '../assets/paintings/sketch.jpg'
+import CircleCursor from "./CircleCursor";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -45,11 +46,15 @@ const Experience = () => {
 
   return (
     <div
+      id="exp"
       //  ref={sectionRef}
       className="h-screen relative max-md:h-auto"
     >
       {/* LEFT SIDE — unchanged on desktop */}
-      <div className="absolute bottom-5 left-5 max-md:static max-md:text-center">
+      <div
+        id="exptext"
+        className="absolute bottom-5 left-5 max-md:static max-md:text-center"
+      >
         <h1
           style={{
             fontFamily: "karatone, sans-serif",
@@ -115,20 +120,22 @@ const Experience = () => {
               artistry has shaped societies across history. Their aged surfaces,
               subtle imperfections, and preserved details speak of journeys far
               older than our own. <br /> <br />
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi sit pariatur dolores dignissimos impedit eum odio, quasi, natus voluptates necessitatibus molestiae! Dolore fuga excepturi officia repellendus ipsam culpa, rem iusto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum sit, molestiae eveniet labore mollitia earum ut magnam aspernatur animi provident.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi sit
+              pariatur dolores dignissimos impedit eum odio, quasi, natus
+              voluptates necessitatibus molestiae! Dolore fuga excepturi officia
+              repellendus ipsam culpa, rem iusto. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Nostrum sit, molestiae eveniet
+              labore mollitia earum ut magnam aspernatur animi provident.
             </p>
           </div>
         </div>
         <div className="w-1/3 hidden justify-center items-center md:flex">
           <div className="p-3 border">
-            <img
-              className=" h-110 border"
-              src={sketch}
-              alt=""
-            />
+            <img className=" h-110 border" src={sketch} alt="" />
           </div>
         </div>
       </div>
+      <CircleCursor targetId={"exp"} hoverId={"exptext"} />
     </div>
   );
 };
