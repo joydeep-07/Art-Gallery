@@ -40,19 +40,21 @@ const App = () => {
   }, []);
 
   return (
-    <Router>
-      <Routes>
-        {/* ROOT LAYOUT */}
-        <Route path="/" element={<Root />}>
-          {/* CHILD ROUTES */}
-          <Route index element={<Home />} />
-          <Route path="/contacts" element={<Contact />} />
-          <Route path="/collections" element={<Collections />} />
-          <Route path="/exhibition" element={<Exhibition />} />
-          <Route path="/are/we/working" element={<AreWeWorking />} />
-        </Route>
-      </Routes>
-    </Router>
+    <>
+      <Router>
+        <Routes>
+          {/* ROOT LAYOUT */}
+          <Route path="/" element={<Root />}>
+            {/* CHILD ROUTES */}
+            <Route index element={<Home />} />
+            <Route path="/contacts" element={<Contact />} />
+            <Route path="/collections" element={<Collections />} />
+            <Route path="/exhibition" element={<Exhibition />} />
+            <Route path="/are/we/working" element={<AreWeWorking />} />
+          </Route>
+        </Routes>
+      </Router>
+    </>
   );
 };
 
