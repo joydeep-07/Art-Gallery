@@ -1,5 +1,6 @@
 import React from "react";
 import Footer from "../layouts/Footer";
+import HandCursor from "../components/HandCursor";
 
 const Contact = () => {
   return (
@@ -64,7 +65,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-
+      
       <Footer />
     </>
   );

@@ -1,5 +1,6 @@
 import React from "react";
 import CircleCursor from "./CircleCursor";
+import HandCursor from "./HandCursor";
 
 const BlogBanner = () => {
   return (
@@ -38,6 +39,7 @@ const BlogBanner = () => {
         </div>
         {/* MAIN BANNER */}
         <div
+          id="ban"
           className="
           h-auto md:h-[500px] 
           flex flex-col md:flex-row 
@@ -113,6 +115,7 @@ const BlogBanner = () => {
         {/* TITLE BELOW BANNER */}
       </div>
       <CircleCursor targetId="blogban" hoverId="blogtext" />
+      <HandCursor targetId="ban" />
     </>
   );
 };
