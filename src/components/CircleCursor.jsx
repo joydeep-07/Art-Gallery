@@ -30,7 +30,7 @@ const CircleCursor = ({ targetId, hoverId }) => {
     const hover = document.getElementById(hoverId);
     if (!hover) return;
 
-    const enter = () => setSize(150);
+    const enter = () => setSize(200);
     const leave = () => setSize(50);
 
     hover.addEventListener("mouseenter", enter);
