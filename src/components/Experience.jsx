@@ -63,7 +63,7 @@ const Experience = () => {
           }}
           className="text-neutral-800 text-[180px] leading-none max-lg:text-[120px] max-md:text-[40px]"
         >
-          Essence of <span className="md:hidden">Visual</span>
+          The Art of <span className="md:hidden">Visual</span>
         </h1>
 
         <h1
