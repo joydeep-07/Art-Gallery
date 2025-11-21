@@ -108,7 +108,9 @@ const AreWeWorking = () => {
               }`}
             >
               <div
-                className={isMobile ? "w-full max-w-4xl text-center mb-10" : ""}
+                className={
+                  isMobile ? "w-full max-w-4xl text-center mb-10 mt-15" : "w-5xl p-5"
+                }
               >
                 <h1
                   style={{ fontFamily: "caesar" }}
@@ -118,21 +120,40 @@ const AreWeWorking = () => {
                       : "text-4xl lg:text-5xl pt-5"
                   }`}
                 >
-                  WHAT we DO?
+                  WHAT WE DO?
                 </h1>
 
                 <h2
                   style={{ fontFamily: "karatone" }}
                   className={`text-neutral-700 pt-10 text-justify ${
                     isMobile
-                      ? "text-base md:text-lg max-w-4xl mx-auto"
-                      : "text-lg lg:text-xl max-w-lg whitespace-normal"
+                      ? "text-base md:text-lg max-w-6xl mx-auto"
+                      : "text-lg lg:text-xl max-w-6xl whitespace-normal"
                   }`}
                 >
-                  I've been designing for 17 years. My background in art and
-                  technology allows me to flexibly manage the product
-                  development process. I've led design teams, building bridges
-                  between stakeholders, users, and team members.
+                  I’ve been painting for 17 years, growing through countless
+                  canvases, styles, and inspirations. This long artistic journey
+                  shaped the way I observe the world and nurtured my sense of
+                  detail, composition, and storytelling. Alongside my art, I
+                  built a strong foundation in technology, which allows me to
+                  approach product development with both creativity and
+                  structure.
+                </h2>
+                <h2
+                  style={{ fontFamily: "karatone" }}
+                  className={`text-neutral-700 pt-5 text-justify ${
+                    isMobile
+                      ? "text-base md:text-lg max-w-6xl mx-auto"
+                      : "text-lg lg:text-xl max-w-6xl whitespace-normal"
+                  }`}
+                >
+                  I’ve led and mentored design teams, collaborated across
+                  departments, and acted as a bridge between stakeholders,
+                  users, and developers. My goal is always to create experiences
+                  that are visually engaging, intuitive to use, and aligned with
+                  a strong strategic vision. Art taught me expression;
+                  technology taught me execution and together, they define the
+                  way I work.
                 </h2>
               </div>
 
