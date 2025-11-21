@@ -45,6 +45,7 @@ const HandCursor = ({ targetId }) => {
       <img
         ref={handRef}
         src={hand}
+        loading="lazy"
         className={`fixed pointer-events-none brightness-70 grayscale-100 z-[9999] h-30 transition-opacity duration-150 ${
           isVisible ? "opacity-100" : "opacity-0"
         }`}
