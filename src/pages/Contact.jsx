@@ -5,7 +5,7 @@ import HandCursor from "../components/HandCursor";
 const Contact = () => {
   return (
     <>
-      <div className="flex justify-center items-center p-5 pt-10 md:pt-23.5">
+      <div className="flex justify-center items-center p-5 pt-20 md:pt-23.5">
         <div className="w-full max-w-7xl flex flex-col md:flex-row p-5 justify-between mx-auto gap-10 md:gap-0">
           {/* ---------- HEADING SECTION ---------- */}
           <div className="space-y-3 text-center md:text-left">
@@ -65,7 +65,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      
+
       <Footer />
     </>
   );
