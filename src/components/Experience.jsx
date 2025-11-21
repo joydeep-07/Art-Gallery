@@ -48,12 +48,12 @@ const Experience = () => {
     <div
       id="exp"
       //  ref={sectionRef}
-      className="h-screen relative max-md:h-auto"
+      className="min-h-screen relative max-md:h-auto"
     >
       {/* LEFT SIDE — unchanged on desktop */}
       <div
         id="exptext"
-        className="absolute bottom-5 left-5 max-md:static max-md:text-center"
+        className="absolute -bottom-8 pt-10 left-10 max-md:static max-md:text-center"
       >
         <h1
           style={{
@@ -61,7 +61,7 @@ const Experience = () => {
             lineHeight: 1,
             letterSpacing: "0.03em",
           }}
-          className="text-neutral-800 text-[180px] leading-none max-lg:text-[120px] max-md:text-[40px]"
+          className="text-neutral-800 text-[20vh] leading-none max-lg:text-[120px] max-md:text-[40px]"
         >
           The Art of <span className="md:hidden">Visual</span>
         </h1>
@@ -72,7 +72,7 @@ const Experience = () => {
             lineHeight: 1,
             letterSpacing: "0.03em",
           }}
-          className="text-neutral-800 text-[180px] leading-none 
+          className="text-neutral-800 text-[23vh] leading-none 
              max-lg:text-[120px] max-md:text-[40px] pt-2 md:pt-0 flex justify-center  gap-5"
         >
           {/* “Visual” — laptop only */}

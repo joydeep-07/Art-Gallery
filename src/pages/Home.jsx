@@ -16,7 +16,9 @@ const Home = () => {
         <BlogBanner />
         <Experience />
 
-        <Footer />
+        <div className="pt-15">
+          <Footer />
+        </div>
       </div>
     </div>
   );
