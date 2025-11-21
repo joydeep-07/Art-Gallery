@@ -83,6 +83,16 @@ const Experience = () => {
         </h1>
       </div>
 
+      <div className=" mt-5 md:hidden flex justify-center">
+        <div className="border p-3">
+          <img
+            className="h-70 border filter contrast-120 brightness-90 "
+            src={sketch}
+            alt=""
+          />
+        </div>
+      </div>
+
       {/* RIGHT SCROLLING CONTENT */}
       <div className=" max-xl:right-10 md:px-10 flex max-lg:right-5 max-md:static">
         <div
