@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import sketch from '../assets/paintings/sketch.jpg'
+import sketch from '../assets/paintings/me.png'
 import CircleCursor from "./CircleCursor";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -84,7 +84,7 @@ const Experience = () => {
       </div>
 
       {/* RIGHT SCROLLING CONTENT */}
-      <div className=" max-xl:right-10 px-10 flex max-lg:right-5 max-md:static">
+      <div className=" max-xl:right-10 md:px-10 flex max-lg:right-5 max-md:static">
         <div
           // ref={contentRef}
           className=" overflow-y-scroll w-2/3 p-5 
@@ -131,7 +131,11 @@ const Experience = () => {
         </div>
         <div className="w-1/3 hidden justify-center items-center md:flex">
           <div className="p-3 border">
-            <img className=" h-110 border" src={sketch} alt="" />
+            <img
+              className="h-110 border filter contrast-120 brightness-90 "
+              src={sketch}
+              alt=""
+            />
           </div>
         </div>
       </div>
