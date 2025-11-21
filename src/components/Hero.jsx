@@ -50,7 +50,6 @@ const Hero = () => {
               lineHeight: 1,
               letterSpacing: "0.03em",
               color: "black",
-              mixBlendMode: "multiply",
             }}
             id="text"
             className="
