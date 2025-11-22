@@ -7,8 +7,7 @@ import Experience from "../components/Experience";
 import Footer from "../layouts/Footer";
 import BlogBanner from "../components/BlogBanner";
 import Campaign from "../components/Campaign";
-import Mentoring from "./Mentoring";
-// import Mentoring from "../components/Mentoring";
+
 
 const Home = () => {
   return (
@@ -17,7 +16,6 @@ const Home = () => {
         <Hero />
         <BlogBanner />
         <Experience />
-        <Mentoring />
         <div className="pt-15">
           <Footer />
         </div>

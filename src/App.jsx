@@ -8,6 +8,7 @@ import AreWeWorking from "./pages/AreWeWorking";
 import Contact from "./pages/Contact";
 import Collections from "./pages/Collections";
 import Exhibition from "./pages/Exhibition";
+import Mentoring from "./pages/Mentoring";
 
 const App = () => {
   useEffect(() => {
@@ -49,7 +50,7 @@ const App = () => {
             <Route index element={<Home />} />
             <Route path="/contacts" element={<Contact />} />
             <Route path="/collections" element={<Collections />} />
-            <Route path="/exhibition" element={<Exhibition />} />
+            <Route path="/mentoring" element={<Mentoring />} />
             <Route path="/are/we/working" element={<AreWeWorking />} />
           </Route>
         </Routes>

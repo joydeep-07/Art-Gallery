@@ -1,6 +1,7 @@
 import React from "react";
 import Lottie from "lottie-react";
 import animation from "../assets/Animations/sesaw.json";
+import Footer from "../layouts/Footer";
 
 const Mentoring = () => {
   return (
@@ -52,7 +53,7 @@ const Mentoring = () => {
         </div>
 
         {/* MENTORING TITLE */}
-        <div className="flex justify-center items-center">
+        <div className="flex h-screen justify-center items-center">
           <div className="w-full max-w-7xl">
             <h1
               style={{ fontFamily: "karatone", lineHeight: 1 }}
@@ -138,6 +139,8 @@ const Mentoring = () => {
             </div>
           </div>
         </div>
+
+        <Footer/>
       </div>
     </>
   );
