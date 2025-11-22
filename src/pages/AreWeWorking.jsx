@@ -2,9 +2,9 @@ import React, { useRef, useEffect, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import img1 from "../assets/paintings/paint20.jpg";
+import img1 from "../assets/portaits/shraddha.jpg";
 import img2 from "../assets/paintings/paint17.jpg";
-import img3 from "../assets/paintings/paint11.jpg";
+import img3 from "../assets/portaits/ranveer.jpg";
 import img4 from "../assets/paintings/paint18.jpg";
 import Footer from "../layouts/Footer";
 

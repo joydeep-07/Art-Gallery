@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import sketch from '../assets/paintings/me.png'
+import sketch from '../assets/portaits/shraddha.jpg'
 import CircleCursor from "./CircleCursor";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -86,7 +86,7 @@ const Experience = () => {
       <div className=" mt-5 md:hidden flex justify-center">
         <div className="border p-3">
           <img
-            className="h-70 border filter contrast-120 brightness-90 "
+            className="h-70 border "
             src={sketch}
             alt=""
           />
@@ -142,7 +142,7 @@ const Experience = () => {
         <div className="w-1/3 hidden justify-center items-center md:flex">
           <div className="p-3 border">
             <img
-              className="h-110 border filter contrast-120 brightness-90 "
+              className="h-110 border "
               src={sketch}
               alt=""
             />
