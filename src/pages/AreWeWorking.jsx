@@ -7,6 +7,7 @@ import img2 from "../assets/paintings/paint17.jpg";
 import img3 from "../assets/portaits/ranveer.jpg";
 import img4 from "../assets/paintings/paint18.jpg";
 import Footer from "../layouts/Footer";
+import { Link } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -109,7 +110,9 @@ const AreWeWorking = () => {
             >
               <div
                 className={
-                  isMobile ? "w-full max-w-4xl text-center mb-10 mt-15" : "w-5xl p-5"
+                  isMobile
+                    ? "w-full max-w-4xl text-center mb-10 mt-15"
+                    : "w-5xl p-5"
                 }
               >
                 <h1
@@ -120,7 +123,7 @@ const AreWeWorking = () => {
                       : "text-4xl lg:text-5xl pt-5"
                   }`}
                 >
-                  WHAT WE DO?
+                  WHAT I DO?
                 </h1>
 
                 <h2
@@ -173,11 +176,13 @@ const AreWeWorking = () => {
               className={`${
                 isMobile
                   ? " w-full flex flex-col items-center justify-center py-10 px-6"
-                  : "flex-shrink-0 w-screen flex justify-center gap-8 lg:gap-16 px-6 md:px-16 md:pb-40"
+                  : "flex-shrink-0 flex justify-center gap-8 lg:gap-16 md:px-50 md:pb-40"
               }`}
             >
               <div
-                className={isMobile ? "w-full max-w-6xl text-center mb-10" : ""}
+                className={
+                  isMobile ? "w-full max-w-6xl text-center mb-10" : " w-6xl"
+                }
               >
                 <h1
                   style={{ fontFamily: "caesar" }}
@@ -187,7 +192,7 @@ const AreWeWorking = () => {
                       : "text-3xl lg:text-4xl pt-5"
                   }`}
                 >
-                  Lorem ipsum dolor, sit adipisicing ?
+                  My development Journey
                 </h1>
 
                 <div
@@ -200,7 +205,7 @@ const AreWeWorking = () => {
                     className={`text-neutral-700 text-justify ${
                       isMobile
                         ? "text-base md:text-lg max-w-4xl mx-auto"
-                        : "text-lg lg:text-xl max-w-lg whitespace-normal"
+                        : "text-lg lg:text-xl max-w-xl whitespace-normal"
                     }`}
                   >
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -309,6 +314,15 @@ const AreWeWorking = () => {
                       deserunt dicta. Nesciunt harum nemo facilis quisquam
                       magnam nobis, alias exercitationem soluta quas.
                     </h2>
+
+                    <div className="mt-16">
+                      <Link
+                        to="/contacts"
+                        className="inline-block px-6 py-3 border border-black rounded-md text-sm font-medium tracking-wide hover:bg-neutral-800 hover:text-[#fffceb] transition-all duration-300"
+                      >
+                        Get In Touch
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -323,7 +337,7 @@ const AreWeWorking = () => {
                   style={{ fontFamily: "karatone", lineHeight: 1.2 }}
                   className="text-6xl lg:text-8xl xl:text-[20vh] font-bold text-neutral-800 inline-block ml-6"
                 >
-                  We create Experience that tells a Story
+                  I can create Experience that tells a Story
                 </h1>
               </div>
             </div>

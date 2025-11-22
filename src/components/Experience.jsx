@@ -86,7 +86,7 @@ const Experience = () => {
       <div className=" mt-5 md:hidden flex justify-center">
         <div className="border p-3">
           <img
-            className="h-70 border "
+            className="h-70 border"
             src={sketch}
             alt=""
           />
