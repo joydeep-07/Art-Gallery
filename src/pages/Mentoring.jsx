@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const Mentoring = () => {
   return (
     <>
-      <div className="min-h-screen">
+      <div className="min-h-screen flex flex-col items-center">
         {/* HERO SECTION */}
         <div className="h-screen flex gap-10 justify-center items-center max-lg:flex-col max-lg:text-center max-lg:h-auto max-lg:py-20">
           {/* LEFT – ANIMATION */}
@@ -142,6 +142,47 @@ const Mentoring = () => {
                   Single sessions or longer mentoring programs are available.
                   Ask about discounted packages.
                 </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="h-screen justify-center items-center">
+          <div className="flex gap-10 justify-center w-7xl">
+            <div className="rounded-xl bg-[#f8f2d8] p-4 w-[350px] h-100">
+              <div className="rounded-md p-3 border border-dashed h-full">
+                {/* <p className="text-justify text-sm text-neutral-700">
+                  If you're looking for inspiration, a moment of pause, or a
+                  different perspective on your professional or life plans,
+                  you'll definitely find it at a meeting with Ula! It's a truly
+                  memorable experience, full of discovery and wow moments. Ula,
+                  the host, is a professional with incredible sensitivity. I
+                  have so much respect for her work.
+                </p> */}
+              </div>
+            </div>
+
+            <div className="rounded-xl bg-[#f8f2d8] p-4 w-[350px] h-120">
+              <div className="rounded-md p-3 border border-dashed h-full">
+                {/* <p className="text-justify text-sm text-neutral-700">
+                  Don't be afraid of chaos or feeling overwhelmed. Ula is a
+                  wonderful, open, and supportive person.
+                </p> */}
+              </div>
+            </div>
+            <div className="rounded-xl bg-[#f8f2d8] p-4 w-[350px] h-140">
+              <div className="rounded-md p-3 border border-dashed h-full">
+                {/* <p className="text-justify text-sm text-neutral-700">
+                  Our meetings were a beautiful blend of theoretical knowledge
+                  and practice. The value of group work is immense. The group
+                  supports, notices, and inspires. In today's world of opinions,
+                  judgments, and LinkedIn, it's hard to find meaningful exchange
+                  or conversation. "The longing for connection, closeness, and
+                  companionship is deeply rooted in our human nature." You
+                  created such a space, Ula. Thank you for the opportunity to
+                  participate in this experience. Active listening is your
+                  superpower. Thank you, you are the best.
+                </p> */}
               </div>
             </div>
           </div>
