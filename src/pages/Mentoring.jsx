@@ -147,7 +147,7 @@ const Mentoring = () => {
           </div>
         </div>
 
-        <div className="h-screen justify-center items-center">
+        <div className="h-screen ">
           <div className="flex gap-10 justify-center w-7xl">
             <div className="rounded-xl bg-[#f8f2d8] p-4 w-[350px] h-100">
               <div className="rounded-md p-3 border border-dashed h-full">
@@ -188,7 +188,9 @@ const Mentoring = () => {
           </div>
         </div>
 
-        <Footer />
+        <div className="w-full">
+          <Footer />
+        </div>
       </div>
     </>
   );
