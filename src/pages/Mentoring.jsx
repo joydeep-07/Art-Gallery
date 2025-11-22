@@ -9,7 +9,7 @@ const Mentoring = () => {
         {/* HERO SECTION */}
         <div className="h-screen flex gap-10 justify-center items-center max-lg:flex-col max-lg:text-center max-lg:h-auto max-lg:py-20">
           {/* LEFT – ANIMATION */}
-          <div className="p-5 flex justify-center">
+          <div className="p-5 hidden md:flex justify-center">
             <Lottie
               animationData={animation}
               loop={true}
@@ -20,30 +20,34 @@ const Mentoring = () => {
           </div>
 
           {/* RIGHT – TEXT */}
-          <div className="p-5 max-lg:flex max-lg:flex-col max-lg:items-center">
-            <h1 className="uppercase text-sm py-3 tracking-wide">
+          <div className="p-5 max-lg:flex max-lg:flex-col">
+            <h1 className="uppercase text-sm md:py-3  text-left tracking-wide">
               UX Mentoring, Product Design
             </h1>
 
             <h1
               style={{ fontFamily: "karatone" }}
               className="text-5xl py-5 tracking-wider font-bold leading-snug
-              max-md:text-3xl max-lg:text-4xl"
+              max-md:text-3xl max-lg:text-4xl text-left"
             >
               The world is too <br /> interesting to experience <br />
               it in one predetermined <br />
               role.
             </h1>
 
-            <button className="py-2 px-5 rounded-full border mt-3">
+            <button className="py-2 hidden md:flex px-5 rounded-full border mt-3">
               <p>Schedule a Meeting</p>
             </button>
 
-            <p className="text-sm pt-10 max-w-2xl max-lg:text-center">
+            <p className="text-sm pt-5 max-w-2xl max-lg:text-left">
               This is a quote by Pedro Almodovar. It's worth sticking it
               somewhere visible, or... giving it to someone at the right moment.
               I received it that way once.
             </p>
+
+            <button className="py-2 md:hidden px-5 rounded-full border mt-10">
+              <p>Schedule a Meeting</p>
+            </button>
           </div>
         </div>
 
@@ -52,13 +56,13 @@ const Mentoring = () => {
           <div className="w-full max-w-7xl">
             <h1
               style={{ fontFamily: "karatone", lineHeight: 1 }}
-              className="text-[150px] text-left max-lg:text-[90px] max-md:text-[55px]"
+              className="text-[150px] text-left px-5 max-lg:text-[90px] max-md:text-[55px]"
             >
               Mentoring
             </h1>
 
             {/* CARDS SECTION */}
-            <div className="flex mt-20 max-lg:flex-col ">
+            <div className="flex mt-2 md:mt-20 max-lg:flex-col ">
               {/* LEFT CARD */}
               <div className="border-r w-1/2 p-7 md:p-7  max-lg:w-full max-lg:border-r-0 ">
                 <h1 className="font-semibold text-xl pb-2 text-neutral-900">
