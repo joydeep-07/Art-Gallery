@@ -115,7 +115,7 @@ const BlogBanner = () => {
         {/* TITLE BELOW BANNER */}
       </div>
       <CircleCursor targetId="blogban" hoverId="blogtext" />
-      <HandCursor targetId="ban" />
+      {/* <HandCursor targetId="ban" /> */}
     </>
   );
 };
