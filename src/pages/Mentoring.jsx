@@ -2,6 +2,7 @@ import React from "react";
 import Lottie from "lottie-react";
 import animation from "../assets/Animations/sesaw.json";
 import Footer from "../layouts/Footer";
+import { Link } from "react-router-dom";
 
 const Mentoring = () => {
   return (
@@ -28,7 +29,7 @@ const Mentoring = () => {
 
             <h1
               style={{ fontFamily: "karatone" }}
-              className="text-5xl py-5 tracking-wider font-bold leading-snug
+              className="text-5xl pt-5 tracking-wider font-bold leading-snug
               max-md:text-3xl max-lg:text-4xl text-left"
             >
               The world is too <br /> interesting to experience <br />
@@ -36,18 +37,24 @@ const Mentoring = () => {
               role.
             </h1>
 
-            <button className="py-2 hidden md:flex px-5 rounded-full border mt-3">
-              <p>Schedule a Meeting</p>
-            </button>
-
-            <p className="text-sm pt-5 max-w-2xl max-lg:text-left">
+            <p className="text-sm hidden md:flex  my-5 max-w-xl max-lg:text-left">
               This is a quote by Pedro Almodovar. It's worth sticking it
               somewhere visible, or... giving it to someone at the right moment.
               I received it that way once.
             </p>
 
-            <button className="py-2 md:hidden px-5 rounded-full border mt-10">
-              <p>Schedule a Meeting</p>
+            <button className="px-6 py-3 mt-7 bg-neutral-800 text-[#fffceb] rounded-sm md:flex hidden hover:bg-neutral-900 transition ">
+              Schedule a Meeting
+            </button>
+
+            <p className="text-sm pt-5 max-w-2xl md:hidden max-lg:text-left">
+              This is a quote by Pedro Almodovar. It's worth sticking it
+              somewhere visible, or... giving it to someone at the right moment.
+              I received it that way once.
+            </p>
+
+            <button className="px-6 py-3 mt-10 bg-neutral-800 text-[#fffceb] rounded-sm md:hidden hover:bg-neutral-900 transition">
+              Schedule a Meeting
             </button>
           </div>
         </div>
@@ -140,7 +147,7 @@ const Mentoring = () => {
           </div>
         </div>
 
-        <Footer/>
+        <Footer />
       </div>
     </>
   );
