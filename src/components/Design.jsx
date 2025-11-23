@@ -107,16 +107,16 @@ const Design = () => {
                 Why is this important?
               </h1>
               <p className="text-sm leading-relaxed text-neutral-600">
-                Let's consider value. Let's analyze the <br /> benefits, risks, and
-                costs.
+                Let's consider value. Let's analyze the <br /> benefits, risks,
+                and costs.
               </p>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="w-7xl border p-5 mt-20">
-
+      <div className="w-7xl border p-5 mt-20 text-center uppercase">
+       test
       </div>
     </div>
   );
