@@ -32,7 +32,10 @@ const Design = () => {
           <div className="w-1/3 h-[90vh] flex flex-col justify-between">
             {/* box 1 */}
             <div className="text-right py-6 border-t border-neutral-300">
-              <h1 className="text-2xl font-semibold pb-2 text-neutral-800">
+              <h1
+                style={{ fontFamily: "continental" }}
+                className="text-2xl font-medium pb-2 text-neutral-900"
+              >
                 What do you need it for?
               </h1>
               <p className="text-sm leading-relaxed text-neutral-600">
@@ -42,7 +45,10 @@ const Design = () => {
 
             {/* box 2 */}
             <div className="text-right py-6 border-t border-neutral-300">
-              <h1 className="text-2xl font-semibold pb-2 text-neutral-800">
+              <h1
+                style={{ fontFamily: "continental" }}
+                className="text-2xl font-medium pb-2 text-neutral-900"
+              >
                 What change do you expect?
               </h1>
               <p className="text-sm leading-relaxed text-neutral-600">
@@ -53,7 +59,10 @@ const Design = () => {
 
             {/* box 3 */}
             <div className="text-right py-6 border-t border-neutral-300">
-              <h1 className="text-2xl font-semibold pb-2 text-neutral-800">
+              <h1
+                style={{ fontFamily: "continental" }}
+                className="text-2xl font-medium pb-2 text-neutral-900"
+              >
                 How and when to do it?
               </h1>
               <p className="text-sm leading-relaxed text-neutral-600">
@@ -82,7 +91,10 @@ const Design = () => {
           <div className="w-1/3 h-[90vh] flex flex-col justify-between">
             {/* box 1 */}
             <div className="text-left py-6 border-t border-neutral-300">
-              <h1 className="text-2xl font-semibold pb-2 text-neutral-800">
+              <h1
+                style={{ fontFamily: "continental" }}
+                className="text-2xl font-medium pb-2 text-neutral-900"
+              >
                 What do they need it for?
               </h1>
               <p className="text-sm leading-relaxed text-neutral-600">
@@ -92,7 +104,10 @@ const Design = () => {
 
             {/* box 2 */}
             <div className="text-left py-6 border-t border-neutral-300">
-              <h1 className="text-2xl font-semibold pb-2 text-neutral-800">
+              <h1
+                style={{ fontFamily: "continental" }}
+                className="text-2xl font-medium pb-2 text-neutral-900"
+              >
                 What will make it unique?
               </h1>
               <p className="text-sm leading-relaxed text-neutral-600">
@@ -103,7 +118,10 @@ const Design = () => {
 
             {/* box 3 */}
             <div className="text-left py-6 border-t border-neutral-300">
-              <h1 className="text-2xl font-semibold pb-2 text-neutral-800">
+              <h1
+                style={{ fontFamily: "continental" }}
+                className="text-2xl font-medium pb-2 text-neutral-900"
+              >
                 Why is this important?
               </h1>
               <p className="text-sm leading-relaxed text-neutral-600">
@@ -115,9 +133,7 @@ const Design = () => {
         </div>
       </div>
 
-      <div className="w-7xl border p-5 mt-20 text-center uppercase">
-       test
-      </div>
+      <div className="w-7xl border p-5 mt-20 text-center uppercase">test</div>
     </div>
   );
 };

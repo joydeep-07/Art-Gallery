@@ -31,10 +31,20 @@
 
 }
 
+@font-face {
+  font-family: "normal";
+  src: url("./assets/font/Normal.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
 ::-webkit-scrollbar{
   display: none;
 }
 
 body{
   background-color: #fffceb;
+  font-family: normal;
+  font-weight: 500;
 }
