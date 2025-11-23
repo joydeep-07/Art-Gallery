@@ -29,7 +29,7 @@ const Design = () => {
       <div className="w-7xl mt-20 rounded-2xl p-10 ">
         <div className="main flex w-full gap-10">
           {/* LEFT */}
-          <div className="w-1/3 h-screen flex flex-col justify-between">
+          <div className="w-1/3 h-[90vh] flex flex-col justify-between">
             {/* box 1 */}
             <div className="text-right py-6 border-t border-neutral-300">
               <h1 className="text-2xl font-semibold pb-2 text-neutral-800">
@@ -43,20 +43,22 @@ const Design = () => {
             {/* box 2 */}
             <div className="text-right py-6 border-t border-neutral-300">
               <h1 className="text-2xl font-semibold pb-2 text-neutral-800">
-                What do you need it for?
+                What change do you expect?
               </h1>
               <p className="text-sm leading-relaxed text-neutral-600">
-                Let's talk about the challenges: <br /> yours and your project's
+                Let's choose the value and quality <br /> measures that support
+                your project.
               </p>
             </div>
 
             {/* box 3 */}
             <div className="text-right py-6 border-t border-neutral-300">
               <h1 className="text-2xl font-semibold pb-2 text-neutral-800">
-                What do you need it for?
+                How and when to do it?
               </h1>
               <p className="text-sm leading-relaxed text-neutral-600">
-                Let's talk about the challenges: <br /> yours and your project's
+                Let's develop a plan and select <br /> solutions that give you
+                control over <br /> time, budget, and quality.
               </p>
             </div>
           </div>
@@ -77,41 +79,45 @@ const Design = () => {
           </div>
 
           {/* RIGHT */}
-          <div className="w-1/3 h-screen flex flex-col justify-between">
+          <div className="w-1/3 h-[90vh] flex flex-col justify-between">
             {/* box 1 */}
             <div className="text-left py-6 border-t border-neutral-300">
               <h1 className="text-2xl font-semibold pb-2 text-neutral-800">
-                What do you need it for?
+                What do they need it for?
               </h1>
               <p className="text-sm leading-relaxed text-neutral-600">
-                Let's talk about the challenges: <br /> yours and your project's
+                Let's offer value to your customers <br /> and users.
               </p>
             </div>
 
             {/* box 2 */}
             <div className="text-left py-6 border-t border-neutral-300">
               <h1 className="text-2xl font-semibold pb-2 text-neutral-800">
-                What do you need it for?
+                What will make it unique?
               </h1>
               <p className="text-sm leading-relaxed text-neutral-600">
-                Let's talk about the challenges: <br /> yours and your project's
+                Let's examine whether and how it <br /> stands out on the
+                market.
               </p>
             </div>
 
             {/* box 3 */}
             <div className="text-left py-6 border-t border-neutral-300">
               <h1 className="text-2xl font-semibold pb-2 text-neutral-800">
-                What do you need it for?
+                Why is this important?
               </h1>
               <p className="text-sm leading-relaxed text-neutral-600">
-                Let's talk about the challenges: <br /> yours and your project's
+                Let's consider value. Let's analyze the <br /> benefits, risks, and
+                costs.
               </p>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="h-screen">Test</div>
+      <div className="w-7xl border p-5 mt-20">
+
+      </div>
     </div>
   );
 };
