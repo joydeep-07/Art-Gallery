@@ -26,13 +26,92 @@ const Design = () => {
         </p>
       </div>
 
-      <div className="w-7xl mt-20 border border-red-500 p-5 flex flex-col justify-center items-center">
-        <div className="main flex w-full">
-          <div className="border p-5 w-1/3 " >2</div>
-          <div className="border p-5 w-1/3 " >3</div>
-          <div className="border p-5 w-1/3 " >1</div>
+      <div className="w-7xl mt-20 rounded-2xl p-10 ">
+        <div className="main flex w-full gap-10">
+          {/* LEFT */}
+          <div className="w-1/3 h-screen flex flex-col justify-between">
+            {/* box 1 */}
+            <div className="text-right py-6 border-t border-neutral-300">
+              <h1 className="text-2xl font-semibold pb-2 text-neutral-800">
+                What do you need it for?
+              </h1>
+              <p className="text-sm leading-relaxed text-neutral-600">
+                Let's talk about the challenges: <br /> yours and your project's
+              </p>
+            </div>
+
+            {/* box 2 */}
+            <div className="text-right py-6 border-t border-neutral-300">
+              <h1 className="text-2xl font-semibold pb-2 text-neutral-800">
+                What do you need it for?
+              </h1>
+              <p className="text-sm leading-relaxed text-neutral-600">
+                Let's talk about the challenges: <br /> yours and your project's
+              </p>
+            </div>
+
+            {/* box 3 */}
+            <div className="text-right py-6 border-t border-neutral-300">
+              <h1 className="text-2xl font-semibold pb-2 text-neutral-800">
+                What do you need it for?
+              </h1>
+              <p className="text-sm leading-relaxed text-neutral-600">
+                Let's talk about the challenges: <br /> yours and your project's
+              </p>
+            </div>
+          </div>
+
+          {/* CENTER — STICKY BOX */}
+          <div className="w-1/3">
+            <div className="sticky top-[20vh] text-center py-10 px-6 rounded-xl">
+              <h1 className="uppercase tracking-wide text-neutral-700 text-sm">
+                First, analysis and creation of the foundation
+              </h1>
+              <h1
+                style={{ fontFamily: "karatone" }}
+                className="text-5xl tracking-wider font-bold mt-5 leading-tight text-neutral-900"
+              >
+                UX Strategy
+              </h1>
+            </div>
+          </div>
+
+          {/* RIGHT */}
+          <div className="w-1/3 h-screen flex flex-col justify-between">
+            {/* box 1 */}
+            <div className="text-left py-6 border-t border-neutral-300">
+              <h1 className="text-2xl font-semibold pb-2 text-neutral-800">
+                What do you need it for?
+              </h1>
+              <p className="text-sm leading-relaxed text-neutral-600">
+                Let's talk about the challenges: <br /> yours and your project's
+              </p>
+            </div>
+
+            {/* box 2 */}
+            <div className="text-left py-6 border-t border-neutral-300">
+              <h1 className="text-2xl font-semibold pb-2 text-neutral-800">
+                What do you need it for?
+              </h1>
+              <p className="text-sm leading-relaxed text-neutral-600">
+                Let's talk about the challenges: <br /> yours and your project's
+              </p>
+            </div>
+
+            {/* box 3 */}
+            <div className="text-left py-6 border-t border-neutral-300">
+              <h1 className="text-2xl font-semibold pb-2 text-neutral-800">
+                What do you need it for?
+              </h1>
+              <p className="text-sm leading-relaxed text-neutral-600">
+                Let's talk about the challenges: <br /> yours and your project's
+              </p>
+            </div>
+          </div>
         </div>
       </div>
+
+      <div className="h-screen">Test</div>
     </div>
   );
 };
