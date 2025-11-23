@@ -2,22 +2,22 @@ import React from "react";
 import image from "../assets/images/design.png";
 const Design = () => {
   return (
-    <div className="flex flex-col justify-center items-center mt-30 min-h-screen">
-      <div className="w-7xl p-5 flex flex-col justify-center items-center">
+    <div className="flex flex-col justify-center items-center md:mt-30 mt-10 md:min-h-screen">
+      <div className="w-full max-w-7xl p-5 flex flex-col justify-center items-center">
         <h1
           style={{ fontFamily: "karatone", lineHeight: 1.1 }}
-          className="text-center text-6xl"
+          className="text-center text-3xl md:text-6xl"
         >
           Perhaps the only freedom <br /> we have is the freedom to <br />
           choose what we pay <br />
           attention to.
         </h1>
 
-        <h3 className="text-sm text-center mt-30">
+        <h3 className="text-sm text-center mt-10 md:mt-30">
           Maybe it's time to include this in your plan
         </h3>
 
-        <img src={image} alt="" className="h-20 my-5 contrast-200" />
+        <img src={image} alt="" className="h-16 md:h-20 my-5 contrast-200" />
 
         <p className="text-center max-w-xl text-sm">
           Because in times of excess it is easy to get lost in the multitude of
@@ -26,7 +26,7 @@ const Design = () => {
         </p>
       </div>
 
-      <div className="w-7xl mt-20 rounded-2xl p-10 ">
+      <div className="w-7xl hidden md:flex mt-20 rounded-2xl p-10 ">
         <div className="main flex w-full gap-10">
           {/* LEFT */}
           <div className="w-1/3 h-[90vh] flex flex-col justify-between">
@@ -133,7 +133,7 @@ const Design = () => {
         </div>
       </div>
 
-      <div className="w-7xl border p-5 mt-20 text-center uppercase">test</div>
+      {/* <div className="w-7xl border p-5 mt-20 text-center uppercase">test</div> */}
     </div>
   );
 };

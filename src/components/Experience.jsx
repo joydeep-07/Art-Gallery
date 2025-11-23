@@ -85,11 +85,7 @@ const Experience = () => {
 
       <div className=" mt-5 md:hidden flex justify-center">
         <div className="border p-3">
-          <img
-            className="h-70 border"
-            src={sketch}
-            alt=""
-          />
+          <img className="h-70 border" src={sketch} alt="" />
         </div>
       </div>
 
@@ -100,13 +96,16 @@ const Experience = () => {
           className=" overflow-y-scroll w-2/3 p-5 
                      max-lg:w-[600px] max-md:w-full max-md:h-auto max-md:overflow-visible"
         >
-          <div style={{ fontFamily: "karatone" }}>
+          <div>
             {/* SECTION 1 */}
-            <h1 className="fade-item font-medium text-xl py-5 max-md:text-lg">
+            <h1
+              style={{ fontFamily: "karatone" }}
+              className="fade-item font-medium text-xl py-5 max-md:text-lg trackig-wide"
+            >
               The Essence of Visual Storytelling
             </h1>
 
-            <p className="fade-item pb-5 text-justify text-[15px] max-md:text-base">
+            <p className="fade-item pb-5 text-justify text-sm max-md:text-base">
               Paintings have always been a timeless form of expression a
               language without words. Every brushstroke carries intention,
               emotion, and a whisper from the artist's world. From contemporary
@@ -117,11 +116,14 @@ const Experience = () => {
             </p>
 
             {/* SECTION 2 */}
-            <h1 className="fade-item font-medium text-xl py-5 max-md:text-lg">
+            <h1
+              style={{ fontFamily: "karatone" }}
+              className="fade-item font-medium text-xl py-5 max-md:text-lg trackig-wide"
+            >
               The Value of Antique Art & Cultural Heritage
             </h1>
 
-            <p className="fade-item pb-5 text-justify text-[15px] max-md:text-base">
+            <p className="fade-item pb-5 text-justify text-sm max-md:text-base">
               Antique art pieces hold more than aesthetic beauty they embody
               centuries of culture, craftsmanship, and tradition. Every
               sculpture, carved wooden frame, or hand-woven tapestry carries the
@@ -141,11 +143,7 @@ const Experience = () => {
         </div>
         <div className="w-1/3 hidden justify-center items-center md:flex">
           <div className="p-3 border">
-            <img
-              className="h-110 border "
-              src={sketch}
-              alt=""
-            />
+            <img className="h-110 border " src={sketch} alt="" />
           </div>
         </div>
       </div>
