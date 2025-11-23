@@ -6,7 +6,7 @@ import About from "../components/About";
 import Experience from "../components/Experience";
 import Footer from "../layouts/Footer";
 import BlogBanner from "../components/BlogBanner";
-import Campaign from "../components/Campaign";
+import Design from "../components/Design";
 
 
 const Home = () => {
@@ -16,6 +16,7 @@ const Home = () => {
         <Hero />
         <BlogBanner />
         <Experience />
+        <Design/>
         <div className="pt-15">
           <Footer />
         </div>
