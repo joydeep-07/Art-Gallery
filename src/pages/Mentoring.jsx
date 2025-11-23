@@ -146,43 +146,95 @@ const Mentoring = () => {
             </div>
           </div>
         </div>
-
-        <div className="h-screen ">
+        {/*REVIEW CARDS  */}
+        <div className="py-10">
           <div className="flex gap-10 justify-center w-7xl">
-            <div className="rounded-xl bg-[#f8f2d8] p-4 w-[350px] h-100">
-              <div className="rounded-md p-3 border border-dashed h-full">
-                {/* <p className="text-justify text-sm text-neutral-700">
-                  If you're looking for inspiration, a moment of pause, or a
-                  different perspective on your professional or life plans,
-                  you'll definitely find it at a meeting with Ula! It's a truly
-                  memorable experience, full of discovery and wow moments. Ula,
-                  the host, is a professional with incredible sensitivity. I
-                  have so much respect for her work.
-                </p> */}
+            <div className="w-[350px] bg-[#f8f2d8] h-100 rounded-2xl p-4 shadow-md">
+              <div className="border border-dashed rounded-xl p-5 h-full flex flex-col justify-between">
+                <p className="text-sm text-neutral-700 leading-relaxed text-justify">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic
+                  exercitationem sunt nobis alias fugiat non, repudiandae,
+                  sapiente, voluptatibus quis quo a rerum magni accusantium. Cum
+                  voluptas voluptatem placeat eum in, ipsa minus eius odit,
+                  consequatur accusamus aliquam? Velit illum sint atque amet
+                  asperiores. Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit. Eos, laboriosam. Lorem ipsum dolor sit amet.
+                </p>
+
+                {/* Profile */}
+                <div className="flex gap-4 items-center mt-6">
+                  <div className="h-12 w-12 rounded-full bg-neutral-300 flex justify-center items-center shadow-inner"></div>
+
+                  <div className="flex flex-col leading-tight">
+                    <h1 className="font-semibold text-neutral-900">
+                      Debashis Roy
+                    </h1>
+                    <h3 className="text-xs text-neutral-600">
+                      Senior Software Developer
+                    </h3>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div className="rounded-xl bg-[#f8f2d8] p-4 w-[350px] h-120">
-              <div className="rounded-md p-3 border border-dashed h-full">
-                {/* <p className="text-justify text-sm text-neutral-700">
-                  Don't be afraid of chaos or feeling overwhelmed. Ula is a
-                  wonderful, open, and supportive person.
-                </p> */}
+            <div className="w-[350px] bg-[#f8f2d8] h-120 rounded-2xl p-4 shadow-md">
+              <div className="border border-dashed rounded-xl p-5 h-full flex flex-col justify-between">
+                <p className="text-sm text-neutral-700 leading-relaxed text-justify">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic
+                  exercitationem sunt nobis alias fugiat non, repudiandae,
+                  sapiente, voluptatibus quis quo a rerum magni accusantium. Cum
+                  voluptas voluptatem placeat eum in, ipsa minus eius odit,
+                  consequatur accusamus aliquam? Velit illum sint atque amet
+                  asperiores. Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit. Aliquam quae sit beatae iusto. Veritatis consectetur
+                  dolores voluptatem magni doloremque! Amet laborum mollitia,
+                  suscipit, magnam dicta magni perferendis praesentium
+                  dignissimos reprehenderit, corporis.
+                </p>
+
+                {/* Profile */}
+                <div className="flex gap-4 items-center mt-6">
+                  <div className="h-12 w-12 rounded-full bg-neutral-300 flex justify-center items-center shadow-inner"></div>
+
+                  <div className="flex flex-col leading-tight">
+                    <h1 className="font-semibold text-neutral-900">
+                      Prosenjit Chatterjee
+                    </h1>
+                    <h3 className="text-xs text-neutral-600">
+                      Head of the department BCA
+                    </h3>
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="rounded-xl bg-[#f8f2d8] p-4 w-[350px] h-140">
-              <div className="rounded-md p-3 border border-dashed h-full">
-                {/* <p className="text-justify text-sm text-neutral-700">
-                  Our meetings were a beautiful blend of theoretical knowledge
-                  and practice. The value of group work is immense. The group
-                  supports, notices, and inspires. In today's world of opinions,
-                  judgments, and LinkedIn, it's hard to find meaningful exchange
-                  or conversation. "The longing for connection, closeness, and
-                  companionship is deeply rooted in our human nature." You
-                  created such a space, Ula. Thank you for the opportunity to
-                  participate in this experience. Active listening is your
-                  superpower. Thank you, you are the best.
-                </p> */}
+            <div className="w-[350px] bg-[#f8f2d8] h-140 rounded-2xl p-4 shadow-md">
+              <div className="border border-dashed rounded-xl p-5 h-full flex flex-col justify-between">
+                <p className="text-sm text-neutral-700 leading-relaxed text-justify">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic
+                  exercitationem sunt nobis alias fugiat non, repudiandae,
+                  sapiente, voluptatibus quis quo a rerum magni accusantium. Cum
+                  voluptas voluptatem placeat eum in, ipsa minus eius odit,
+                  consequatur accusamus aliquam? Velit illum sint atque amet
+                  asperiores. Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit. Illum velit vitae eius molestias labore consectetur
+                  nostrum omnis maiores reiciendis quas. Lorem ipsum, dolor sit
+                  amet consectetur adipisicing elit. Incidunt sequi ad dolor
+                  exercitationem quis voluptatibus cumque eligendi nostrum,
+                  maxime consectetur. Lorem, ipsum dolor sit amet consectetur
+                  adipisicing elit. Tenetur, reprehenderit?
+                </p>
+
+                {/* Profile */}
+                <div className="flex gap-4 items-center mt-6">
+                  <div className="h-12 w-12 rounded-full bg-neutral-300 flex justify-center items-center shadow-inner"></div>
+
+                  <div className="flex flex-col leading-tight">
+                    <h1 className="font-semibold text-neutral-900">
+                      Elon Musk
+                    </h1>
+                    <h3 className="text-xs text-neutral-600">CEO Tesala</h3>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
