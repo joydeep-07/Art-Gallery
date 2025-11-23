@@ -1,8 +1,8 @@
 import React from "react";
-import image from '../assets/images/design.png'
+import image from "../assets/images/design.png";
 const Design = () => {
   return (
-    <div className="flex justify-center items-start mt-30 min-h-screen">
+    <div className="flex flex-col justify-center items-center mt-30 min-h-screen">
       <div className="w-7xl p-5 flex flex-col justify-center items-center">
         <h1
           style={{ fontFamily: "karatone", lineHeight: 1.1 }}
@@ -13,10 +13,7 @@ const Design = () => {
           attention to.
         </h1>
 
-        <h3
-         
-          className="text-sm text-center mt-30"
-        >
+        <h3 className="text-sm text-center mt-30">
           Maybe it's time to include this in your plan
         </h3>
 
@@ -27,7 +24,14 @@ const Design = () => {
           possibilities, pursue other people's goals instead of your own, and
           consequently, produce products that have no meaning.
         </p>
+      </div>
 
+      <div className="w-7xl mt-20 border border-red-500 p-5 flex flex-col justify-center items-center">
+        <div className="main flex w-full">
+          <div className="border p-5 w-1/3 " >2</div>
+          <div className="border p-5 w-1/3 " >3</div>
+          <div className="border p-5 w-1/3 " >1</div>
+        </div>
       </div>
     </div>
   );
