@@ -116,18 +116,18 @@ const AreWeWorking = () => {
                 }
               >
                 <h1
-                  style={{ fontFamily: "caesar" }}
+                  style={{ fontFamily: "continental" }}
                   className={`${
                     isMobile
                       ? "text-3xl md:text-4xl pt-10"
                       : "text-4xl lg:text-5xl pt-5"
                   }`}
                 >
-                  WHAT I DO?
+                  Who am I ?
                 </h1>
 
                 <h2
-                  style={{ fontFamily: "karatone" }}
+                 
                   className={`text-neutral-700 pt-10 text-justify ${
                     isMobile
                       ? "text-base md:text-lg max-w-6xl mx-auto"
@@ -143,7 +143,7 @@ const AreWeWorking = () => {
                   structure.
                 </h2>
                 <h2
-                  style={{ fontFamily: "karatone" }}
+                 
                   className={`text-neutral-700 pt-5 text-justify ${
                     isMobile
                       ? "text-base md:text-lg max-w-6xl mx-auto"
@@ -185,7 +185,7 @@ const AreWeWorking = () => {
                 }
               >
                 <h1
-                  style={{ fontFamily: "caesar" }}
+                  style={{ fontFamily: "continental" }}
                   className={`${
                     isMobile
                       ? "text-2xl md:text-3xl pt-10"
@@ -201,7 +201,7 @@ const AreWeWorking = () => {
                   }`}
                 >
                   <h2
-                    style={{ fontFamily: "karatone" }}
+                   
                     className={`text-neutral-700 text-justify ${
                       isMobile
                         ? "text-base md:text-lg max-w-4xl mx-auto"
@@ -221,7 +221,7 @@ const AreWeWorking = () => {
                   </h2>
 
                   <h2
-                    style={{ fontFamily: "karatone" }}
+                   
                     className={`text-neutral-700 text-justify ${
                       isMobile
                         ? "text-base md:text-lg max-w-4xl mx-auto"
@@ -271,7 +271,7 @@ const AreWeWorking = () => {
 
                   <div>
                     <h1
-                      style={{ fontFamily: "caesar" }}
+                      style={{ fontFamily: "continental" }}
                       className={`${
                         isMobile
                           ? "text-2xl md:text-3xl pt-5"
@@ -282,7 +282,7 @@ const AreWeWorking = () => {
                     </h1>
 
                     <h2
-                      style={{ fontFamily: "karatone" }}
+                     
                       className={`text-neutral-700 text-justify ${
                         isMobile
                           ? "pt-6 text-base md:text-lg max-w-2xl mx-auto"
@@ -296,7 +296,7 @@ const AreWeWorking = () => {
                     </h2>
 
                     <h2
-                      style={{ fontFamily: "karatone" }}
+                     
                       className={`text-neutral-700 text-justify ${
                         isMobile
                           ? "pt-6 text-base md:text-lg max-w-2xl mx-auto"

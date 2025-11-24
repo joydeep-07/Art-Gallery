@@ -73,7 +73,7 @@ const Design = () => {
           </div>
 
           {/* CENTER — STICKY BOX */}
-          <div className="w-1/3">
+          <div className="w-1/3 ">
             <div className="sticky top-[20vh] text-center py-10 px-6 rounded-xl">
               <h1 className="uppercase tracking-wide text-neutral-700 text-sm">
                 First, analysis and creation of the foundation
