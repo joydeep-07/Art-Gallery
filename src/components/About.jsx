@@ -78,7 +78,7 @@ const About = () => {
           mb-10 sm:mb-12 
           text-center text-neutral-800
         "
-          style={{ fontFamily: "caesar, sans-serif", letterSpacing: "0.03em" }}
+          style={{ fontFamily: "continental, sans-serif", letterSpacing: "0.03em" }}
         >
           About Us
         </h1>
@@ -109,7 +109,7 @@ const About = () => {
         <div
           ref={textRef}
           style={{
-            fontFamily: "karatone, sans-serif",
+            // fontFamily: "karatone, sans-serif",
             letterSpacing: "0.03em",
           }}
           className="

@@ -79,7 +79,7 @@ const Hero = () => {
           {/* SUBTITLE */}
           <p
             style={{
-              fontFamily: "karatone, sans-serif",
+              // fontFamily: "karatone, sans-serif",
               lineHeight: 1.2,
               letterSpacing: "0.01em",
             }}
