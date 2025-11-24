@@ -33,7 +33,7 @@
 
 @font-face {
   font-family: "normal";
-  src: url("./assets/font/Normal.ttf") format("truetype");
+  src: url("./assets/font/Bellefair.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 
@@ -45,6 +45,6 @@
 
 body{
   background-color: #fffceb;
-  /* font-family: normal; */
-  /* font-weight: 500; */
+  font-family: normal;
+  font-weight: 500;
 }

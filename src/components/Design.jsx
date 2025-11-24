@@ -19,7 +19,7 @@ const Design = () => {
 
         <img src={image} alt="" className="h-16 md:h-20 my-5 contrast-200" />
 
-        <p className="text-center max-w-xl text-sm">
+        <p className="text-center max-w-[500px] text-md">
           Because in times of excess it is easy to get lost in the multitude of
           possibilities, pursue other people's goals instead of your own, and
           consequently, produce products that have no meaning.
@@ -38,7 +38,7 @@ const Design = () => {
               >
                 What do you need it for?
               </h1>
-              <p className="text-sm leading-relaxed text-neutral-600">
+              <p className="text-md leading-relaxed text-neutral-600">
                 Let's talk about the challenges: <br /> yours and your project's
               </p>
             </div>
@@ -51,7 +51,7 @@ const Design = () => {
               >
                 What change do you expect?
               </h1>
-              <p className="text-sm leading-relaxed text-neutral-600">
+              <p className="text-md leading-relaxed text-neutral-600">
                 Let's choose the value and quality <br /> measures that support
                 your project.
               </p>
@@ -65,7 +65,7 @@ const Design = () => {
               >
                 How and when to do it?
               </h1>
-              <p className="text-sm leading-relaxed text-neutral-600">
+              <p className="text-md text-neutral-600">
                 Let's develop a plan and select <br /> solutions that give you
                 control over <br /> time, budget, and quality.
               </p>
@@ -97,7 +97,7 @@ const Design = () => {
               >
                 What do they need it for?
               </h1>
-              <p className="text-sm leading-relaxed text-neutral-600">
+              <p className="text-md leading-relaxed text-neutral-600">
                 Let's offer value to your customers <br /> and users.
               </p>
             </div>
@@ -110,7 +110,7 @@ const Design = () => {
               >
                 What will make it unique?
               </h1>
-              <p className="text-sm leading-relaxed text-neutral-600">
+              <p className="text-md leading-relaxed text-neutral-600">
                 Let's examine whether and how it <br /> stands out on the
                 market.
               </p>
@@ -124,7 +124,7 @@ const Design = () => {
               >
                 Why is this important?
               </h1>
-              <p className="text-sm leading-relaxed text-neutral-600">
+              <p className="text-md leading-relaxed text-neutral-600">
                 Let's consider value. Let's analyze the <br /> benefits, risks,
                 and costs.
               </p>

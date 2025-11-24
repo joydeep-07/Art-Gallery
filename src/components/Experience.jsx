@@ -105,7 +105,7 @@ const Experience = () => {
               The Essence of Visual Storytelling
             </h1>
 
-            <p className="fade-item pb-5 text-justify text-sm max-md:text-base">
+            <p className="fade-item pb-5 text-justify text-md max-md:text-base">
               Paintings have always been a timeless form of expression a
               language without words. Every brushstroke carries intention,
               emotion, and a whisper from the artist's world. From contemporary
@@ -123,7 +123,7 @@ const Experience = () => {
               The Value of Antique Art & Cultural Heritage
             </h1>
 
-            <p className="fade-item pb-5 text-justify text-sm max-md:text-base">
+            <p className="fade-item pb-5 text-justify text-md max-md:text-base">
               Antique art pieces hold more than aesthetic beauty they embody
               centuries of culture, craftsmanship, and tradition. Every
               sculpture, carved wooden frame, or hand-woven tapestry carries the
