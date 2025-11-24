@@ -50,7 +50,7 @@ const BlogBanner = () => {
         >
           {/* LEFT SIDE */}
           <div className="left w-full md:w-1/2">
-            <p className="mt-6 md:mt-10 p-3 pl-0 md:p-5 text-xs">
+            <p className="mt-6 md:mt-10 p-3 pl-0 md:py-5 text-xs">
               States of matter, or otherwise a blog
             </p>
 
@@ -74,12 +74,12 @@ const BlogBanner = () => {
               </h1>
             </div>
 
-            <p className=" md:p-5 mt-2 text-sm sm:text-base">
+            <p className=" md:py-5 mt-2 text-sm sm:text-base">
               This text is not a recipe, but an account of everyday situations
               in which choices, small gestures and mindfulness became the
               foundation of a sensitive leadership style.
             </p>
-            <button className="py-2 px-5 mt-5 ml-0 border rounded-full text-sm sm:text-base">
+            <button className="py-2 px-5 mt-5 ml-0 border border-neutral-400/20 rounded-full bg-neutral-800 text-sm sm:text-base">
               Read More
             </button>
           </div>
@@ -99,13 +99,13 @@ const BlogBanner = () => {
               in the peak-end
             </h1>
 
-            <p className="md:p-5 mt-6 md:mt-20 text-sm sm:text-base">
+            <p className="md:py-5 mt-6 md:mt-20 text-sm sm:text-base">
               How memories of experience are formed—what we really remember from
               brand contact. And how to avoid shooting yourself in the foot with
               a logo.
             </p>
 
-            <button className="py-2 px-5 mt-5 ml-0 border rounded-full text-sm sm:text-base">
+            <button className="py-2 px-5 mt-5 ml-0 border border-neutral-400/20 rounded-full bg-neutral-800 text-sm sm:text-base">
               Read More
             </button>
           </div>

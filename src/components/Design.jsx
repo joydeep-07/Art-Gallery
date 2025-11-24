@@ -5,8 +5,8 @@ const Design = () => {
     <div className="flex flex-col justify-center items-center md:mt-30 mt-10 md:min-h-screen">
       <div className="w-full max-w-7xl p-5 flex flex-col justify-center items-center">
         <h1
-          style={{ fontFamily: "karatone", lineHeight: 1.1 }}
-          className="text-center text-3xl md:text-6xl"
+          style={{ fontFamily: "continental", lineHeight: 1.3 }}
+          className="text-center text-neutral-800 text-3xl md:text-6xl"
         >
           Perhaps the only freedom <br /> we have is the freedom to <br />
           choose what we pay <br />
