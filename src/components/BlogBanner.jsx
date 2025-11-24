@@ -24,7 +24,6 @@ const BlogBanner = () => {
           </h1>
 
           <p
-            style={{ fontFamily: "karatone" }}
             className="
             text-center 
             text-base sm:text-lg md:text-xl 
