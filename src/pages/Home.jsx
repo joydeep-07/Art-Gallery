@@ -7,6 +7,7 @@ import Experience from "../components/Experience";
 import Footer from "../layouts/Footer";
 import BlogBanner from "../components/BlogBanner";
 import Design from "../components/Design";
+import Review from "../components/Review";
 
 
 const Home = () => {
@@ -17,6 +18,7 @@ const Home = () => {
         <BlogBanner />
         <Experience />
         <Design/>
+        <Review/>
         <div className="pt-15">
           <Footer />
         </div>
