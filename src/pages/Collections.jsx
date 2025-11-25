@@ -31,7 +31,7 @@ const Collections = () => {
               of Matter,
             </h1>
 
-            <p className="max-w-md text-xs sm:text-sm mt-3">
+            <p className="max-w-md text-md mt-3">
               For more design help, inspiration, and case studies, sign up for
               our newsletter (by signing up, you accept our privacy policy).
             </p>
