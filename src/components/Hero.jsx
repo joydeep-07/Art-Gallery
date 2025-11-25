@@ -96,7 +96,7 @@ const Hero = () => {
           </p>
 
           {/* CTA BUTTON */}
-          <div className="mt-8 sm:mt-12 md:mt-16">
+          {/* <div className="mt-8 sm:mt-12 md:mt-16">
             <button
               className="
                 group relative overflow-hidden 
@@ -114,7 +114,7 @@ const Hero = () => {
               <span className="relative z-10">Explore Collection</span>
               <div className="absolute inset-0 bg-neutral-800 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500"></div>
             </button>
-          </div>
+          </div> */}
         </div>
 
         {/* Scroll indicator */}
