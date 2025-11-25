@@ -1,8 +1,52 @@
-import React from "react";
+import React, { useState } from "react";
 import Footer from "../layouts/Footer";
 import HandCursor from "../components/HandCursor";
+import { supabase } from "../utils/supabaseClient";
+import { toast } from "sonner";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  // Handle input updates
+  const handleChange = (e) => {
+    const { value, placeholder } = e.target;
+    const key =
+      placeholder === "Your Name"
+        ? "name"
+        : placeholder === "Your Email"
+        ? "email"
+        : "message";
+
+    setFormData((prev) => ({ ...prev, [key]: value }));
+  };
+
+  // Submit to Supabase
+  const handleSubmit = async () => {
+    const { name, email, message } = formData;
+
+    if (!name || !email || !message) {
+      toast.error("Please fill all fields.");
+      return;
+    }
+
+    const { data, error } = await supabase
+      .from("Contacts")
+      .insert([{ name, email, message }]);
+
+    if (error) {
+      console.error("Supabase error:", error.message);
+      toast.error("Something went wrong. Try again.");
+      return;
+    }
+
+    toast.success("Message sent successfully!");
+    setFormData({ name: "", email: "", message: "" });
+  };
+
   return (
     <>
       <div className="flex justify-center items-center p-5 pt-20 md:pt-23.5">
@@ -43,22 +87,31 @@ const Contact = () => {
               <input
                 type="text"
                 placeholder="Your Name"
+                value={formData.name}
+                onChange={handleChange}
                 className="w-full p-3 border border-neutral-300 rounded-md focus:outline-none focus:ring-1 focus:ring-neutral-800"
               />
 
               <input
                 type="email"
                 placeholder="Your Email"
+                value={formData.email}
+                onChange={handleChange}
                 className="w-full p-3 border border-neutral-300 rounded-md focus:outline-none focus:ring-1 focus:ring-neutral-800"
               />
 
               <textarea
                 placeholder="Your Message"
                 rows="5"
+                value={formData.message}
+                onChange={handleChange}
                 className="w-full p-3 border border-neutral-300 rounded-md resize-none focus:outline-none focus:ring-1 focus:ring-neutral-800"
               ></textarea>
 
-              <button className="px-6 py-3 bg-neutral-800 text-[#fffceb] rounded-md hover:bg-neutral-900 transition w-full">
+              <button
+                onClick={handleSubmit}
+                className="px-6 py-3 bg-neutral-800 text-[#fffceb] rounded-md hover:bg-neutral-900 transition w-full"
+              >
                 Send Message
               </button>
             </div>
@@ -67,6 +120,7 @@ const Contact = () => {
       </div>
 
       <Footer />
+      {/* <HandCursor /> */}
     </>
   );
 };
