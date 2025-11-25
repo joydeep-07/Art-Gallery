@@ -73,7 +73,10 @@ const Mentoring = () => {
             <div className="flex mt-2 md:mt-20 max-lg:flex-col ">
               {/* LEFT CARD */}
               <div className="border-r w-1/2 p-7 md:p-7  max-lg:w-full max-lg:border-r-0 ">
-                <h1 className="font-semibold text-xl pb-2 text-neutral-900">
+                <h1
+                  style={{ fontFamily: "karatone", letterSpacing: "0.05em" }}
+                  className="font-semibold text-xl pb-2 text-neutral-900"
+                >
                   Volunteering cooperation
                 </h1>
                 <p className="text-sm py-2 text-neutral-700">
@@ -98,7 +101,10 @@ const Mentoring = () => {
 
               {/* RIGHT CARD */}
               <div className="w-1/2 p-7 md:p-5  max-lg:w-full max-lg:border-r-0 ">
-                <h1 className="font-semibold text-xl pb-2 text-neutral-900">
+                <h1
+                  style={{ fontFamily: "karatone", letterSpacing: "0.05em" }}
+                  className="font-semibold text-xl pb-2 text-neutral-900"
+                >
                   Commercial cooperation
                 </h1>
                 <p className="text-sm py-2 text-neutral-700">
@@ -166,7 +172,13 @@ const Mentoring = () => {
                   <div className="h-12 w-12 rounded-full bg-neutral-300 flex justify-center items-center shadow-inner"></div>
 
                   <div className="flex flex-col leading-tight">
-                    <h1 className="font-semibold text-neutral-900">
+                    <h1
+                      style={{
+                        fontFamily: "karatone",
+                        letterSpacing: "0.05em",
+                      }}
+                      className="font-semibold text-sm text-neutral-900"
+                    >
                       Debashis Roy
                     </h1>
                     <h3 className="text-xs text-neutral-600">
@@ -197,7 +209,13 @@ const Mentoring = () => {
                   <div className="h-12 w-12 rounded-full bg-neutral-300 flex justify-center items-center shadow-inner"></div>
 
                   <div className="flex flex-col leading-tight">
-                    <h1 className="font-semibold text-neutral-900">
+                    <h1
+                      style={{
+                        fontFamily: "karatone",
+                        letterSpacing: "0.05em",
+                      }}
+                      className="font-semibold text-sm text-neutral-900"
+                    >
                       Prosenjit Chatterjee
                     </h1>
                     <h3 className="text-xs text-neutral-600">
@@ -229,7 +247,13 @@ const Mentoring = () => {
                   <div className="h-12 w-12 rounded-full bg-neutral-300 flex justify-center items-center shadow-inner"></div>
 
                   <div className="flex flex-col leading-tight">
-                    <h1 className="font-semibold text-neutral-900">
+                    <h1
+                      style={{
+                        fontFamily: "karatone",
+                        letterSpacing: "0.05em",
+                      }}
+                      className="font-semibold text-sm text-neutral-900"
+                    >
                       Elon Musk
                     </h1>
                     <h3 className="text-xs text-neutral-600">CEO Tesala</h3>
