@@ -13,13 +13,13 @@ const Footer = () => {
         </div>
 
         <div className="text-center md:text-left px-2 md:px-0">
-          <h2 className="max-w-md text-md">
+          <h2 className="max-w-md text-neutral-800 text-sm">
             They say happiness is when you plant a tree for your grandchildren
             to rest under. Let me know if this approach resonates with you.
           </h2>
 
-          <div className="flex flex-col md:flex-row gap-3 md:gap-10 text-sm pt-5">
-            <div className="flex justify-center md:justify-start items-center gap-2">
+          <div className="flex text-neutral-800 flex-col md:flex-row gap-3 md:gap-10 text-xs pt-5">
+            <div className="flex  justify-center md:justify-start items-center gap-2">
               <IoMailOutline />
               <h3 className="break-all">joydeeprnp8821@gmail.com</h3>
             </div>
@@ -60,7 +60,7 @@ const Footer = () => {
 
         <div className="w-full hidden md:flex h-[1px] bg-neutral-800"></div>
 
-        <p className="text-[10px] md:text-sm text-center text-gray-400 leading-relaxed px-3">
+        <p className="text-[10px] md:text-xs text-center text-gray-400 leading-relaxed px-3">
           This website only uses essential cookies. We do not use tracking or
           advertising cookies. Read more in our privacy policy.
         </p>

@@ -75,7 +75,7 @@ const Contact = () => {
               With Us,
             </h1>
 
-            <p className="max-w-md text-md text-neutral-600 pt-2 mx-auto md:mx-0">
+            <p className="max-w-md text-sm text-neutral-600 pt-2 mx-auto md:mx-0">
               Feel free to reach out for collaborations, projects, inquiries, or
               just to say hello. We would love to hear from you.
             </p>

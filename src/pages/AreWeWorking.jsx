@@ -123,7 +123,7 @@ const AreWeWorking = () => {
                       : "text-4xl lg:text-5xl pt-5"
                   }`}
                 >
-                  Who am I ?
+                  Who I am
                 </h1>
 
                 <h2
@@ -131,7 +131,7 @@ const AreWeWorking = () => {
                   className={`text-neutral-700 pt-10 text-justify ${
                     isMobile
                       ? "text-base md:text-lg max-w-6xl mx-auto"
-                      : "text-lg lg:text-xl max-w-6xl whitespace-normal"
+                      : "text-lg lg:text-md max-w-6xl whitespace-normal"
                   }`}
                 >
                   I’ve been painting for 17 years, growing through countless
@@ -147,7 +147,7 @@ const AreWeWorking = () => {
                   className={`text-neutral-700 pt-5 text-justify ${
                     isMobile
                       ? "text-base md:text-lg max-w-6xl mx-auto"
-                      : "text-lg lg:text-xl max-w-6xl whitespace-normal"
+                      : "text-lg lg:text-md max-w-6xl whitespace-normal"
                   }`}
                 >
                   I’ve led and mentored design teams, collaborated across
@@ -205,7 +205,7 @@ const AreWeWorking = () => {
                     className={`text-neutral-700 text-justify ${
                       isMobile
                         ? "text-base md:text-lg max-w-4xl mx-auto"
-                        : "text-lg lg:text-xl max-w-xl whitespace-normal"
+                        : "text-lg lg:text-md max-w-xl whitespace-normal"
                     }`}
                   >
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -225,7 +225,7 @@ const AreWeWorking = () => {
                     className={`text-neutral-700 text-justify ${
                       isMobile
                         ? "text-base md:text-lg max-w-4xl mx-auto"
-                        : "text-lg lg:text-xl max-w-lg whitespace-normal"
+                        : "text-lg lg:text-md max-w-lg whitespace-normal"
                     }`}
                   >
                     I've been designing for 17 years. My background in art and
@@ -286,7 +286,7 @@ const AreWeWorking = () => {
                       className={`text-neutral-700 text-justify ${
                         isMobile
                           ? "pt-6 text-base md:text-lg max-w-2xl mx-auto"
-                          : "pt-6 lg:pt-10 text-lg lg:text-xl max-w-4xl whitespace-normal"
+                          : "pt-6 lg:pt-10 text-lg lg:text-md max-w-4xl whitespace-normal"
                       }`}
                     >
                       I've been designing for 17 years. My background in art and
@@ -300,7 +300,7 @@ const AreWeWorking = () => {
                       className={`text-neutral-700 text-justify ${
                         isMobile
                           ? "pt-6 text-base md:text-lg max-w-2xl mx-auto"
-                          : "pt-5 text-lg lg:text-xl max-w-4xl whitespace-normal"
+                          : "pt-5 text-lg lg:text-md max-w-4xl whitespace-normal"
                       }`}
                     >
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
