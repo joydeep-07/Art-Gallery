@@ -3,6 +3,7 @@ import Lottie from "lottie-react";
 import animation from "../assets/Animations/sesaw.json";
 import Footer from "../layouts/Footer";
 import { Link } from "react-router-dom";
+import Review from "../components/Review";
 
 const Mentoring = () => {
   return (
@@ -263,6 +264,10 @@ const Mentoring = () => {
             </div>
           </div>
         </div>
+
+        {/* REVIEW FORM  */}
+
+        <Review/>
 
         <div className="w-full">
           <Footer />

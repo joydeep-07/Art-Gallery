@@ -18,7 +18,7 @@ const Home = () => {
         <BlogBanner />
         <Experience />
         <Design/>
-        <Review/>
+        {/* <Review/> */}
         <div className="pt-15">
           <Footer />
         </div>
