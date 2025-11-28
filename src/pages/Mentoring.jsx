@@ -3,6 +3,7 @@ import Lottie from "lottie-react";
 import animation from "../assets/Animations/sesaw.json";
 import Footer from "../layouts/Footer";
 import { Link } from "react-router-dom";
+import MentoringAppointment from "../components/MentoringAppointment";
 
 const Mentoring = () => {
   return (
@@ -152,6 +153,9 @@ const Mentoring = () => {
             </div>
           </div>
         </div>
+
+        <MentoringAppointment />
+        
         {/*REVIEW CARDS  */}
         <div className="py-10">
           <div className="flex gap-10 justify-center w-7xl">
@@ -263,8 +267,6 @@ const Mentoring = () => {
             </div>
           </div>
         </div>
-
-        
 
         <div className="w-full">
           <Footer />
