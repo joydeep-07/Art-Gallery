@@ -3,8 +3,10 @@ import Footer from "../layouts/Footer";
 import HandCursor from "../components/HandCursor";
 import { supabase } from "../utils/supabaseClient";
 import { toast } from "sonner";
+import { TbLoader } from "react-icons/tb";
 
 const Contact = () => {
+  const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -25,27 +27,28 @@ const Contact = () => {
   };
 
   // Submit to Supabase
-  const handleSubmit = async () => {
-    const { name, email, message } = formData;
+ const handleSubmit = async () => {
+   if (!formData.name || !formData.email || !formData.message) {
+     toast.error("Please fill all fields.");
+     return;
+   }
 
-    if (!name || !email || !message) {
-      toast.error("Please fill all fields.");
-      return;
-    }
+   setLoading(true);
 
-    const { data, error } = await supabase
-      .from("Contacts")
-      .insert([{ name, email, message }]);
+   const { data, error } = await supabase.from("Contacts").insert([formData]);
 
-    if (error) {
-      console.error("Supabase error:", error.message);
-      toast.error("Something went wrong. Try again.");
-      return;
-    }
+   setLoading(false);
 
-    toast.success("Message sent successfully!");
-    setFormData({ name: "", email: "", message: "" });
-  };
+   if (error) {
+     console.error("Supabase error:", error.message);
+     toast.error("Something went wrong. Try again.");
+     return;
+   }
+
+   toast.success("Message sent successfully!");
+   setFormData({ name: "", email: "", message: "" });
+ };
+
 
   return (
     <>
@@ -110,9 +113,19 @@ const Contact = () => {
 
               <button
                 onClick={handleSubmit}
-                className="px-6 py-3 bg-neutral-800 text-[#fffceb] rounded-md hover:bg-neutral-900 transition w-full"
+                disabled={loading}
+                className="px-6 py-3 bg-neutral-800 text-[#fffceb] rounded-md hover:bg-neutral-900 transition w-full flex justify-center items-center gap-2 disabled:opacity-60"
               >
-                Send Message
+                {loading ? (
+                  <>
+                    <span className="w-5 h-5 border-t-transparent rounded-full animate-spin">
+                      <TbLoader />
+                    </span>
+                    Sending...
+                  </>
+                ) : (
+                  "Send Message"
+                )}
               </button>
             </div>
           </div>
