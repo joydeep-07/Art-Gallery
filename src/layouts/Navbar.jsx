@@ -127,10 +127,10 @@ const Navbar = () => {
                   style={{ fontFamily: "caesar, sans-serif" }}
                 >
                   <span className="text-amber-800 font-extrabold text-lg sm:text-xl md:text-2xl pr-1 sm:pr-2 tracking-tight">
-                    Paul
+                    The 
                   </span>
                   <span className="text-amber-600/80 font-extrabold text-lg sm:text-xl md:text-2xl tracking-wider">
-                    Codes
+                    Canvas
                   </span>
                 </Link>
                 <p className="hidden sm:block text-xs text-amber-700/70 tracking-wide">

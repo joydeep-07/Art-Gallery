@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 const CircleCursor = ({ targetId, hoverId }) => {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const [isActive, setIsActive] = useState(false);
-  const [size, setSize] = useState(50); // Mouse tracking and active zone logic (using mousePos directly)
+  const [size, setSize] = useState(50);
 
   useEffect(() => {
     const moveHandler = (e) => {
@@ -24,7 +24,7 @@ const CircleCursor = ({ targetId, hoverId }) => {
 
     window.addEventListener("mousemove", moveHandler);
     return () => window.removeEventListener("mousemove", moveHandler);
-  }, [targetId]); // Hover scaling effect (still uses smooth transition for size change)
+  }, [targetId]);
 
   useEffect(() => {
     const hover = document.getElementById(hoverId);
@@ -45,7 +45,7 @@ const CircleCursor = ({ targetId, hoverId }) => {
   if (!isActive) return null;
 
   return (
-    <div // REMOVED: transition-all duration-300 // The size change effect is still smooth because the `size` property changes smoothly via state // but the position (top/left) changes instantaneously.
+    <div 
       className="pointer-events-none hidden md:flex fixed z-[60] bg-white"
       style={{
         width: `${size}px`,
@@ -53,7 +53,7 @@ const CircleCursor = ({ targetId, hoverId }) => {
         borderRadius: "50%",
         top: mousePos.y - size / 2,
         left: mousePos.x - size / 2,
-        mixBlendMode: "multiply", // Optional: Add transition ONLY for width/height if you want size change to be smooth
+        mixBlendMode: "multiply",
         transition: "width 0.3s ease-out, height 0.3s ease-out",
       }}
     />
