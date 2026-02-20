@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import video from "../assets/video/banner.mp4";
+import img from '../assets/images/banner.jpg'
 import CustomCursor from "./CustomCursor";
 import { CiPlay1 } from "react-icons/ci";
 import CircleCursor from "./CircleCursor";
@@ -78,14 +79,17 @@ const About = () => {
           mb-10 sm:mb-12 
           text-center text-neutral-800
         "
-          style={{ fontFamily: "continental, sans-serif", letterSpacing: "0.03em" }}
+          style={{
+            fontFamily: "continental, sans-serif",
+            letterSpacing: "0.03em",
+          }}
         >
           About Us
         </h1>
 
         {/* Video Section */}
         <div className="relative w-full max-w-5xl rounded-xl sm:rounded-2xl overflow-hidden shadow-2xl mb-10 sm:mb-12">
-          <video
+          {/* <video
             id="vid"
             src={video}
             autoPlay
@@ -100,7 +104,19 @@ const About = () => {
             md:h-[300px] 
             object-cover
           "
-          ></video>
+          ></video> */}
+
+          <img
+            className="
+            w-full 
+            h-[180px] 
+            sm:h-[260px] 
+            md:h-[300px] 
+            object-cover
+          "
+            src={img}
+            alt=""
+          />
 
           <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none"></div>
         </div>
@@ -126,7 +142,7 @@ const About = () => {
         "
         >
           {splitTextToSpans(
-            "Welcome to The Art Gallery, a curated collection of exquisite artworks from around the world. Our mission is to connect art enthusiasts with stunning pieces that inspire and captivate. Whether you're an avid collector or a casual admirer, we invite you to explore our diverse range of artworks and discover the stories behind each piece. Thank you for being a part of our artistic journey."
+            "Welcome to The Art Gallery, a curated collection of exquisite artworks from around the world. Our mission is to connect art enthusiasts with stunning pieces that inspire and captivate. Whether you're an avid collector or a casual admirer, we invite you to explore our diverse range of artworks and discover the stories behind each piece. Thank you for being a part of our artistic journey.",
           )}
         </div>
 
