@@ -1,5 +1,5 @@
 import React from "react";
-import { Newsletter } from "../utils/Newsletter";
+import { Blogs } from "../utils/Blogs";
 import Footer from "../layouts/Footer";
 
 const Collections = () => {
@@ -50,14 +50,16 @@ const Collections = () => {
           </div>
 
           {/* -------- NEWSLETTER GRID -------- */}
-          <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
-            {Newsletter.map((item) => (
+          <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5">
+            {Blogs.map((item) => (
               <div key={item.id} className="transition">
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  className="w-full h-48 sm:h-56 md:h-50 object-cover rounded-[4px]"
-                />
+                <div className="flex justify-center items-center">
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="w-68 border p-4 h-100 object-cover"
+                  />
+                </div>
 
                 <div className="p-4">
                   <h2
@@ -78,9 +80,9 @@ const Collections = () => {
                     {item.description}
                   </p>
 
-                  <button className="border border-neutral-800 text-neutral-800 px-4 py-2 rounded-[4px]">
+                  {/* <button className="border border-neutral-800 text-neutral-800 px-4 py-2 rounded-[4px]">
                     Read More
-                  </button>
+                  </button> */}
                 </div>
               </div>
             ))}
